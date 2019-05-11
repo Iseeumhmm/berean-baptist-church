@@ -16,7 +16,7 @@
 	    <footer>
 			<style>
 				.helpful-img {
-					background-image: url('<?php the_field('helpful_link_img'); ?>')
+					background-image: url('<?php the_field('icr', 'option'); ?>')
 				}
 			</style>
             <div class="container-fluid">

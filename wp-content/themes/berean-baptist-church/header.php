@@ -31,7 +31,7 @@
 					<div class="col-lg-10">
 						<nav class="navbar navbar-expand-lg navbar-light">
 							<div class="logo">
-								<a href="/bridges/index" class="navbar-brand"><h1>Berean Baptist Church</h1></a>
+								<a href="/Berean/home" class="navbar-brand"><h1>Berean Baptist Church</h1></a>
 								<p>London, Ontario</p>
 							</div>
 							<button class="navbar-toggler mr-md-7" data-toggle="collapse" data-target="#navbarMenu">
@@ -42,28 +42,28 @@
 								<div class="navbar-nav ml-auto navbar-mobile-center">
 									<ul class="navbar-nav ml-auto">
 										<li class="nav-item">
-											<a href="" class="nav-link">Sermons</a>
+											<a href="Berean/sermons" class="nav-link">Sermons</a>
 										</li>
 										<li class="nav-item">
-											<a href="" class="nav-link">27NT60</a>
+											<a href="Berean/27nt60" class="nav-link">27NT60</a>
 										</li>
 										<li class="nav-item">
-											<a href="" class="nav-link">Donations</a>
+											<a href="Berean/donations" class="nav-link">Donations</a>
 										</li>
 										<li class="nav-item">
-											<a href="" class="nav-link">About</a>
+											<a href="Berean/about" class="nav-link">About</a>
 										</li>
 										<li class="nav-item">
-											<a href="" class="nav-link">Ministries</a>
+											<a href="Berean/ministries" class="nav-link">Ministries</a>
 										</li>
 										<li class="nav-item">
-											<a href="" class="nav-link">Statement of Faith</a>
+											<a href="Berean/statement-faith" class="nav-link">Statement of Faith</a>
 										</li>
 										<li class="nav-item">
-											<a href="" class="nav-link">Missionaries</a>
+											<a href="Berean/missionaries" class="nav-link">Missionaries</a>
 										</li>
 										<li class="nav-item">
-											<a href="" class="nav-link">Contact</a>
+											<a href="Berean/contact" class="nav-link">Contact</a>
 										</li>
 									</ul>
 								</div>

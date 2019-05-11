@@ -143,6 +143,19 @@ function berean_baptist_church_scripts() {
 add_action( 'wp_enqueue_scripts', 'berean_baptist_church_scripts' );
 
 /**
+ * Custom Footer ACF
+ */
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page(array(
+		'page_title' 	=> 'Footer',
+		'menu_title'	=> 'Footer Customization',
+		'menu_slug' 	=> 'footer-customization',
+		'redirect'		=> false
+	));
+}
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
