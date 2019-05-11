@@ -1,0 +1,23 @@
+footer {
+    background-image: linear-gradient(to right, #1e9cd8, #067ac2);
+    color: white;
+    padding: 4rem 0;
+    h2 {
+        color: white;
+        white-space: nowrap;
+    }
+    ul {
+        margin: 0 2.5rem;
+        padding: 0;
+        list-style-type: none;
+    }
+    .footer-col {
+        padding: 0;
+    }
+    .helpful-img {
+        height: 12rem;
+        width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}

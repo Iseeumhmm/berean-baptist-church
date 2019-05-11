@@ -1,0 +1,21 @@
+header {
+    color: $black;
+    nav.navbar {
+        display: block;
+        margin: 3rem 0 -4rem;
+    }
+    #navbarMenu {
+        position: relative;
+        bottom: 4.15rem;
+    }
+    margin: 0;
+    padding: 0;
+    .phone {
+        font-size: $font-small;
+        color: $dark-blue;
+        position: absolute;
+        right: 1.5rem;
+        top: 2rem;
+    }
+    li { margin-left: 2rem; }
+}

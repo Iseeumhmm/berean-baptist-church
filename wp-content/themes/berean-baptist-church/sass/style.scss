@@ -1,0 +1,24 @@
+/*!
+Theme Name:         NAME OF CLIENT
+Theme URI:          http://underscores.me/
+Description:        Custom developed theme
+Version:            1.0.0
+Author:             Redding Designs
+Author URI:         https://reddingdesigns.com
+
+License:            MIT License
+License URI:        http://opensource.org/licenses/MIT
+*/
+
+// Bootstrap
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+// Abstracts
+@import "./Abstracts/variables";
+
+// Base
+@import "./Base/base";
+
+// Components
+@import "./Components/header";
+@import "./Components/footer";
