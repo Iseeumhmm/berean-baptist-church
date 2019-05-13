@@ -22,3 +22,11 @@ License URI:        http://opensource.org/licenses/MIT
 // Components
 @import "./Components/header";
 @import "./Components/footer";
+@import "./Components/banner";
+@import "./Components/three-block";
+@import "./Components/heading-bar";
+@import "./Components/main-content-container";
+@import "./Components/button.scss";
+
+//Pages
+@import "./Pages/home";

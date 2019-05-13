@@ -1,0 +1,11 @@
+.heading-bar {
+    text-align: center;
+    padding: 1.5rem 0;
+    color: white;
+    background-image: linear-gradient(to right, #1e9cd8, #067ac2);
+    &--about {
+        h1 { color: white; }
+        text-align: left;
+        padding: 1.5rem $main-padding-x;
+    }
+}

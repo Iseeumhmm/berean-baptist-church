@@ -1,0 +1,18 @@
+.three-block {
+    h2 { color: white; }
+    ul { padding-top: 2rem; }
+    li { 
+        list-style: none; 
+        color: white;
+    }
+    padding: 4rem 6rem;
+    height: 225px;
+    width: 33.3%;
+    height: calc(33.3vw / 2.25);
+    background-size: cover;
+    background-position: center;
+    &--1 {
+        background-image: linear-gradient(to right, #1e9cd8, #067ac2);
+    }
+  
+}

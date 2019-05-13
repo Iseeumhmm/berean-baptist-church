@@ -10,11 +10,26 @@
  */
 get_header();?>
 	<!-- ***********************  GET IMAGES *********************** -->
+	<style>
+		.banner-img-top {
+			background-image: url('<?php the_field('top_banner'); ?>')
+		}
+		.banner-img-bottom {
+			background-image: url('<?php the_field('bottom_banner'); ?>')
+		}
+	</style>
 	 
 		<!-- ***********************  MAIN AREA *********************** -->
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-			
+		<div class="heading-bar heading-bar--about">
+			<h1>About Us</h1>
+		</div>
+		<div class="main_content">
+			<div class="banner banner-img-top" title="Main Banner"></div>
+			<div class="banner banner-img-bottom" title="Main Banner"></div>
+		</div>
+		
 	
 		</main><!-- #main -->
 	</div><!-- #primary -->

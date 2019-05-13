@@ -10,11 +10,21 @@
  */
 get_header();?>
 	<!-- ***********************  GET IMAGES *********************** -->
-	 
+	<style>
+		.banner-img-top {
+			background-image: url('<?php the_field('main_banner'); ?>')
+		}
+	</style>
 		<!-- ***********************  MAIN AREA *********************** -->
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-			
+			<div class="heading-bar heading-bar--about">
+				<h1>Ministries</h1>
+			</div>
+			<div class="main_content text-center">
+				<div class="banner banner-img-top" title="Main Banner"></div>
+				<h1>Come Join us in Growing Together</h1>
+			</div>
 	
 		</main><!-- #main -->
 	</div><!-- #primary -->

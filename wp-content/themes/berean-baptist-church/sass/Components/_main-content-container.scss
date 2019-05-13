@@ -1,0 +1,14 @@
+.main_content {
+    h1 { font-weight: 800; }
+    p { padding:  1rem 25% 2rem; }
+    padding: 8rem $main-padding-x;
+    &-sub-container {
+        padding: 8rem 0;
+        text-align: center;
+        width: 100%;
+        height: auto;
+    }
+    .grey-background {
+        background-color: #f7f7f7;
+    }
+}
