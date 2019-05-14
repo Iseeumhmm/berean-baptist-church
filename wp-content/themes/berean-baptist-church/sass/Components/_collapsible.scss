@@ -1,0 +1,67 @@
+.collapsible-container {
+    position: relative;
+}
+.collapsible {
+    background-color: $light-grey;
+    color: $dark-blue;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: $font-small;
+    &-top {
+        background-color: transparent;
+        &::after {
+        }
+    }
+  }
+  button.collapsible {
+      margin-bottom: 1rem;
+  }
+  button.collapsible-top::after {
+    border: 3px solid white;
+    color: white;
+
+  }
+//   .active, .collapsible:hover {
+//     background-color: $light-grey;
+//   }
+
+  .content {
+    margin: 2rem 0;
+    display: none;
+    overflow: hidden;
+    background-color: white;
+    text-align: left;
+    ul { padding-left : 3rem; }
+    li { padding: 1rem 0 };
+  }
+  .collapsible:after {
+    margin-top: 12px;
+    border: 3px solid $dark-blue;
+    padding: 0 5px;
+    border-radius: 8px;
+    font-family: "Font Awesome 5 Pro";
+    font-size: 20px;
+    content: '\f067'; /* Unicode character for "plus" sign (+) */
+    float: right;
+  }
+ 
+  .active:after {
+    content: "\f068"; /* Unicode character for "minus" sign (-) */
+    font-family: "Font Awesome 5 Pro";
+  }
+
+  .sub-title {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    font-size: $font-small;
+    color: $black;
+  }
+  
+  button.collapsible {
+    font-family: 'EB Garamond', serif;
+    font-weight: 600;
+    font-size: $font-medium;
+  }

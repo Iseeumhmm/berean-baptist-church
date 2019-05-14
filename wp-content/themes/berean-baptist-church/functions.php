@@ -130,6 +130,12 @@ wp_enqueue_script('PopperJs');
 wp_register_script( 'Bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', null, null, true );
 wp_enqueue_script('Bootstrap');
 
+function my_theme_scripts_function() {
+	wp_enqueue_script( 'myscript', get_template_directory_uri() . '/js/script.js');
+}
+add_action('wp_enqueue_scripts','my_theme_scripts_function');
+  
+  
 
 function berean_baptist_church_scripts() {
 	wp_enqueue_style( 'berean-baptist-church-style', get_stylesheet_uri() );
@@ -157,6 +163,88 @@ if( function_exists('acf_add_options_page') ) {
 	));
 }
 
+/**
+ * CUSTOM SUPPORTED MISSIONARIES POST TYPE
+ */
+
+function missionary_init() {
+    // set up product labels
+    $labels = array(
+        'name' => 'Missionaries',
+        'singular_name' => 'Missionaries',
+        'add_new' => 'Add New Missionary',
+        'add_new_item' => 'New Missionary',
+        'edit_item' => 'Edit Missionary',
+        'new_item' => 'New Missionary',
+        'all_items' => 'All Missionaries',
+        'view_item' => 'View Missionary',
+        'search_items' => 'Search Missionaries',
+        'not_found' =>  'No Missionary Found',
+        'not_found_in_trash' => 'No Missionary found in Trash', 
+        'parent_item_colon' => '',
+        'menu_name' => 'Missionaries',
+    );
+    
+    // register post type
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'has_archive' => true,
+        'show_ui' => true,
+        'capability_type' => 'post',
+        'hierarchical' => false,
+        'rewrite' => array('slug' => 'missionary'),
+        'query_var' => true,
+        'menu_icon' => 'dashicons-randomize',
+        'supports' => array(
+			'title',
+            'custom-fields'
+        )
+    );
+    register_post_type( 'missionaries', $args );
+    
+}
+add_action( 'init', 'missionary_init' );
+
+/**
+ * CUSTOM SCRIPTURES POST TYPE
+ */
+function scriptures_init() {
+    $labels = array(
+        'name' => 'Scriptures',
+        'singular_name' => 'Scripture',
+        'add_new' => 'Add New scriptures',
+        'add_new_item' => 'Add New Scriptures',
+        'edit_item' => 'Edit Scriptures',
+        'new_item' => 'New Scriptures',
+        'all_items' => 'All Scriptures',
+        'view_item' => 'View Scriptures',
+        'search_items' => 'Search Scriptures',
+        'not_found' =>  'No Scriptures Found',
+        'not_found_in_trash' => 'No Scriptures found in Trash', 
+        'parent_item_colon' => '',
+        'menu_name' => 'Scriptures',
+    );
+    
+    // register post type
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'has_archive' => true,
+        'show_ui' => true,
+        'capability_type' => 'post',
+        'hierarchical' => false,
+        'rewrite' => array('slug' => 'scriptures'),
+        'query_var' => true,
+        'menu_icon' => 'dashicons-randomize',
+        'supports' => array(
+            'title',
+			'custom-fields'
+		)
+    );
+    register_post_type( 'Scriptures', $args );
+}
+add_action( 'init', 'scriptures_init' );
 /**
  * Implement the Custom Header feature.
  */

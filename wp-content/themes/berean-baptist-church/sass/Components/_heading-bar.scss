@@ -8,4 +8,12 @@
         text-align: left;
         padding: 1.5rem $main-padding-x;
     }
+    &--statement {
+        z-index: -100;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 6rem;
+    }
 }

@@ -25,7 +25,7 @@ get_header();?>
 				<div class="banner banner-img-top" title="Main Banner"></div>
 				<h1>Come Join us in Growing Together</h1>
 			</div>
-	
+			
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
