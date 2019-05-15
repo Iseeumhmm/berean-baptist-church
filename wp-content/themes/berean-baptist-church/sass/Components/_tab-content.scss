@@ -1,0 +1,51 @@
+
+  #exTab1 .tab-content {
+    color : white;
+    background-color: #428bca;
+  }
+  
+  #exTab1 .nav-pills {
+      li {
+      }
+  }
+  li.acitve::after {
+      content : '';
+  }
+  
+  .sermon {
+    &-title {
+      font-family: 'EB Garamond', serif;
+      font-size: $font-small;
+      font-weight: 600;
+      color: $black;
+      }
+    &-date {
+      float: right;
+      position: relative;
+      top: 1.75rem;
+      font-family: 'Work Sans', sans-serif;
+      font-size: $font-x-small;
+      font-weight: 400;
+    }
+    &-pastor {
+      position: relative;
+      font-size: $font-x-small;
+      font-weight: 400;
+      left: 3.25rem;
+      bottom: .75rem;
+    }
+    &-audio {
+      font-size: $font-small;
+    }
+    &-line {
+      border-top: 1px solid $light-grey;
+      width: 100%;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  

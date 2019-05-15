@@ -245,6 +245,50 @@ function scriptures_init() {
     register_post_type( 'Scriptures', $args );
 }
 add_action( 'init', 'scriptures_init' );
+
+/**
+ * CUSTOM Sermons POST TYPE
+ */
+function sermons_init() {
+    $labels = array(
+        'name' => 'Sermons',
+        'singular_name' => 'Sermon',
+        'add_new' => 'Add New Sermons',
+        'add_new_item' => 'Add New Sermons',
+        'edit_item' => 'Edit Sermons',
+        'new_item' => 'New Sermons',
+        'all_items' => 'All Sermons',
+        'view_item' => 'View Sermons',
+        'search_items' => 'Search Sermons',
+        'not_found' =>  'No Sermons Found',
+        'not_found_in_trash' => 'No Sermons found in Trash', 
+        'parent_item_colon' => '',
+        'menu_name' => 'Sermons',
+    );
+    
+    // register post type
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'has_archive' => true,
+        'show_ui' => true,
+        'capability_type' => 'post',
+        'hierarchical' => false,
+        'rewrite' => array('slug' => 'sermons'),
+        'query_var' => true,
+        'menu_icon' => 'dashicons-randomize',
+        'supports' => array(
+            'title',
+			'custom-fields'
+		)
+	);
+	register_post_type( 'Sermons', $args );
+	
+	 // register taxonomy
+	 register_taxonomy('sermons_by_year', 'Sermons', array('hierarchical' => true, 'label' => 'Sermons', 'query_var' => true, 'rewrite' => array( 'slug' => 'sermons-by-year' )));
+	
+}
+add_action( 'init', 'sermons_init' );
 /**
  * Implement the Custom Header feature.
  */

@@ -2,7 +2,9 @@
 $light-blue : #29abe2;
 $dark-blue : #0071bc;
 $black : #1a1a1a;
-$light-grey : #f7f7f7;
+// $light-grey : #f7f7f7;
+$light-grey : #CDCDCD;
+
 .color-white { color: white; }
 .color-blue { color: $dark-blue; }
 
@@ -11,6 +13,8 @@ $light-grey : #f7f7f7;
 $font-large: 48px;
 $font-medium: 36px;
 $font-small: 24px;
+$font-x-small: 18px;
+
 
 // Main Padding
 

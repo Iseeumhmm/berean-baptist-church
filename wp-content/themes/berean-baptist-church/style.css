@@ -10750,6 +10750,10 @@ button:focus {
   outline: 0;
 }
 
+li:focus {
+  outline: 0;
+}
+
 header {
   color: #1a1a1a;
   margin: 0;
@@ -10913,7 +10917,7 @@ footer .helpful-img {
 }
 
 .main_content .grey-background {
-  background-color: #f7f7f7;
+  background-color: #CDCDCD;
 }
 
 .rounded-button {
@@ -10924,12 +10928,36 @@ footer .helpful-img {
   padding: 1rem 4rem;
 }
 
+.sermon-button {
+  color: #0071bc;
+  background-color: #CDCDCD;
+  border: none;
+  border-radius: 4rem;
+  font-size: 24px;
+  margin: 1rem;
+  padding: 0.25rem 8rem;
+}
+
+.sermon-button:hover {
+  color: white;
+}
+
+li.active .sermon-button {
+  outline: none;
+  background-image: linear-gradient(to right, #1e9cd8, #067ac2);
+  color: white;
+}
+
+button:focus {
+  color: white;
+}
+
 .collapsible-container {
   position: relative;
 }
 
 .collapsible {
-  background-color: #f7f7f7;
+  background-color: #CDCDCD;
   color: #0071bc;
   cursor: pointer;
   width: 100%;
@@ -10980,7 +11008,7 @@ button.collapsible-top::after {
   float: right;
 }
 
-.active:after {
+.collapsible.active:after {
   content: "\F068";
   /* Unicode character for "minus" sign (-) */
   font-family: "Font Awesome 5 Pro";
@@ -10997,6 +11025,48 @@ button.collapsible {
   font-family: "EB Garamond", serif;
   font-weight: 600;
   font-size: 36px;
+}
+
+#exTab1 .tab-content {
+  color: white;
+  background-color: #428bca;
+}
+
+li.acitve::after {
+  content: "";
+}
+
+.sermon-title {
+  font-family: "EB Garamond", serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.sermon-date {
+  float: right;
+  position: relative;
+  top: 1.75rem;
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.sermon-pastor {
+  position: relative;
+  font-size: 18px;
+  font-weight: 400;
+  left: 3.25rem;
+  bottom: 0.75rem;
+}
+
+.sermon-audio {
+  font-size: 24px;
+}
+
+.sermon-line {
+  border-top: 1px solid #CDCDCD;
+  width: 100%;
 }
 
 .home_interact {

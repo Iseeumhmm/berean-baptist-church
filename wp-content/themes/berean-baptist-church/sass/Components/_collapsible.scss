@@ -12,8 +12,6 @@
     font-size: $font-small;
     &-top {
         background-color: transparent;
-        &::after {
-        }
     }
   }
   button.collapsible {
@@ -48,7 +46,7 @@
     float: right;
   }
  
-  .active:after {
+  .collapsible.active:after {
     content: "\f068"; /* Unicode character for "minus" sign (-) */
     font-family: "Font Awesome 5 Pro";
   }
