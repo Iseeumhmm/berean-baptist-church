@@ -21,7 +21,7 @@
 			</style>
             <div class="container-fluid">
                 <div class="row justify-content-around">
-                    <div class="col-md-2 footer-col">
+                    <div class="col-md-3 col-lg-2 footer-col">
 					<ul>
 						<li><h2>Berean Baptist Church</h2></li>
 						<li>932 Leathorne Street</li>
@@ -30,7 +30,7 @@
 						<li><a href="mailto: ">Send us an email</a></li>
 					</ul> 
                     </div>
-                    <div class="col-md-2 footer-col">
+                    <div class="col-md-3 col-lg-2 footer-col">
 						<ul>
 							<li><h2>Additional Info</h2></li>
 							<li><a href="">Make a Donation</a></li>
@@ -39,7 +39,7 @@
 							<li><a href="">Privacy Policy</a></li>
 						</ul> 
                     </div>
-                    <div class="col-md-2 footer-col">
+                    <div class="col-md-3 col-lg-2 footer-col footer-col--last">
                         <div>
 							<h2>Helpful Links</h2>
 							<a href="">

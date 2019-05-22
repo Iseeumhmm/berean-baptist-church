@@ -28,7 +28,7 @@
         <header id="masthead" class="site-header">
 			<div class="container-fluid">
 				<div class="row justify-content-around">
-					<div class="col-lg-10">
+					<div class="col-md-12 col-lg-11 col-xl-10">
 						<nav class="navbar navbar-expand-lg navbar-light">
 							<div class="logo">
 								<a href="/Berean/home" class="navbar-brand"><h1>Berean Baptist Church</h1></a>

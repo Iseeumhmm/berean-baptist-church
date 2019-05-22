@@ -1,5 +1,5 @@
 .banner {
-    min-height: 675px;
+    min-height: 500px;
     width: 100%;
    background-size: cover;
    position: relative;
@@ -19,6 +19,21 @@
        top: 50%;
        transform: translateY(-50%);
        left: $main-padding-x;
-       width: 40%;
+       width: 25%;
    }
+   &.donations-div {
+       background-position: bottom;
+   }
+}
+
+
+@media( max-width: 1500px ){
+    .banner {
+        .center-div {
+            width: 80%;
+        }
+        .left-div {
+            width: 80%;
+        }
+    } 
 }

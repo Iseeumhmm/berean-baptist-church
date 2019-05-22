@@ -63,3 +63,17 @@
     font-weight: 600;
     font-size: $font-medium;
   }
+
+  @media( max-width: 1550px ){
+    .sub-title {
+      font-size: $font-x-small;
+    }
+  }
+  @media( max-width: 768px ){
+    .collapsible:after {
+      margin: 5px 0;
+    }
+    .sub-title {
+      display: none;
+    }
+  }

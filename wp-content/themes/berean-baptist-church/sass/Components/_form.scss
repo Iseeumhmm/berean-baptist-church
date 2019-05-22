@@ -1,0 +1,45 @@
+.error{
+    padding: 5px 9px;
+    border: 1px solid red;
+    color: red;
+    border-radius: 3px;
+    margin: 0 30% 3rem;
+}
+
+.success{
+    padding: 5px 9px;
+    border: 1px solid green;
+    color: green;
+    border-radius: 3px;
+    margin: 0 30% 3rem;
+}
+
+form span{
+    color: red;
+}
+.contact-form {
+    h2 {
+        padding-top: 8rem;
+    }
+}
+#respond {
+    [class^="col-"] {
+        padding: 0 .25rem 1rem !important;
+    }
+    .input_box {
+        width: 100%;
+    }
+    input {
+        border-radius: 1rem;
+        border: 1px solid $light-grey;
+        width: 100%;
+        padding-left: 2rem;
+    }
+    textarea { 
+        border-radius: 1rem;
+        border: 1px solid $light-grey;
+        width: 100%; 
+        padding-left: 2rem;
+    }
+    .btn { margin: 2rem 0 8rem; }
+}

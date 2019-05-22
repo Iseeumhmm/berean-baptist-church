@@ -1,0 +1,12 @@
+.ministries-page {
+    p { padding: 1rem 5rem; }
+    .ministries_container_padding {
+        padding: 8rem;
+    }
+}
+
+@media( max-width: 1500px ){
+    .ministries-page {
+        p { padding: 1rem 0; }
+    }
+}

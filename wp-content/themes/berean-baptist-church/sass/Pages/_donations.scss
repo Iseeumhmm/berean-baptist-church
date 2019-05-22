@@ -1,0 +1,9 @@
+.donations-page {
+    p { padding: 1rem 10rem; }
+}
+
+@media( max-width: 1500px ){
+    .donations-page {
+        p { padding: 1rem 0; }
+    }
+}

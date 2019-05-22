@@ -18,4 +18,39 @@ header {
         top: 2rem;
     }
     li { margin-left: 2rem; }
+    button.navbar-toggler {
+        z-index: 1000;
+        position: absolute;
+        right: 1.5rem;
+        top: 1.75rem;
+    }
+}
+
+@media( max-width: 1750px ){
+    header {
+        p { padding-bottom: .9rem; }
+    }
+}
+@media( max-width: 1400px ){
+    header {
+        p { padding-bottom: 1.2rem; }
+    }
+}
+@media( max-width: 1200px ){
+    header {
+        li { margin-left: .5rem; }
+    }
+}
+@media( max-width: 991px ){
+    header {
+        h1 { font-size: 32px; }
+        p {visibility: hidden;}
+        .phone {
+            right: 6.5rem;
+            top: 1.25rem;
+        }
+    }
+}
+@media( max-width: 540px ){
+    .phone { visibility: hidden; }
 }

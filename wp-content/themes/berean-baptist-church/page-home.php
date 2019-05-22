@@ -40,23 +40,23 @@ get_header();?>
 			<div class="main_content">
 				<div class="container-fluid">
 					<div class="row d-flex justify-content-center">
-						<div class="col-auto three-block three-block--1" title="Service Times">
+						<div class="col-sm-12 col-md-8 col-lg-auto three-block three-block--1" title="Service Times">
 							<h2>Berean Baptist <br> Service Times</h2>
 						</div>
-						<div class="col-auto three-block three-block--2" title="Sundays">
+						<div class="col-sm-12 col-md-8 col-lg-auto three-block three-block--2" title="Sundays">
 						<h2>Sundays</h2>
-						<p><?php the_field('service_times_sundays'); ?></p>
+						<?php the_field('service_times_sundays'); ?>
 						</div>
-						<div class="col-auto three-block three-block--3" title="Wednesdays">
+						<div class="col-sm-12 col-md-8 col-lg-auto three-block three-block--3" title="Wednesdays">
 						<h2>Wednesdays</h2>
-						<p><?php the_field('service_times_wednesdays'); ?></p>
+						<?php the_field('service_times_wednesdays'); ?>
 						</div>
 					</div>
 				</div>
 				<div class="main_content-sub-container">
 					<h2>The Nobility of the Bereans</h2>
 					<p>"These (the Bereans) were more noble than those in Thessalonica, in that they received the word with all readiness of mind, and searched the scriptures daily, whether those things were so.<br>(Act 17:11 - KJB)</p>
-					<button onclick="location.href = '/Berean';" class="btn rounded-button">LEARN MORE ABOUT US</button>
+					<button onclick="location.href = '/Berean';" class="btn btn-white rounded-button">LEARN MORE ABOUT US</button>
 				</div>
 				<div class="main_content-sub-container grey-background">
 					<h2>Interact with Us</h2>
@@ -78,7 +78,7 @@ get_header();?>
 					</div>
 				</div>
 				<div class="heading-bar">
-					<a href="Berean/statement-faith">Click Here to read our Statement of Faith</a>
+					<a href="Berean/statement-faith" class="statement-faith--link">Click Here to read our Statement of Faith</a>
 				</div>
 			</div>
 			<div class="banner banner-img-bottom" title="Missionaries">

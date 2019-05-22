@@ -17,3 +17,11 @@
         height: 6rem;
     }
 }
+
+@media( max-width: 768px ){
+    .heading-bar {
+        h1 { font-size: $font-medium; }
+        height: 5rem;
+        padding: 0 2.5rem;
+    }
+  }

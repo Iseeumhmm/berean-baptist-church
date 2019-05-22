@@ -10687,7 +10687,19 @@ a.text-dark:focus {
 }
 
 .main-padding-y {
-  padding-top: 8rem;
+  padding-top: 8rem !important;
+}
+
+@media (max-width: 1325px) {
+  .secondary-margin {
+    margin: 0 5px;
+  }
+}
+
+@media (max-width: 580px) {
+  .secondary-margin p {
+    padding: 0 5px !important;
+  }
 }
 
 *,
@@ -10754,6 +10766,26 @@ li:focus {
   outline: 0;
 }
 
+@media (max-width: 1750px) {
+  body {
+    font-size: 18px;
+  }
+
+  body p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1400px) {
+  body {
+    font-size: 16px;
+  }
+
+  body p {
+    font-size: 16px;
+  }
+}
+
 header {
   color: #1a1a1a;
   margin: 0;
@@ -10780,6 +10812,52 @@ header .phone {
 
 header li {
   margin-left: 2rem;
+}
+
+header button.navbar-toggler {
+  z-index: 1000;
+  position: absolute;
+  right: 1.5rem;
+  top: 1.75rem;
+}
+
+@media (max-width: 1750px) {
+  header p {
+    padding-bottom: 0.9rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  header p {
+    padding-bottom: 1.2rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  header li {
+    margin-left: 0.5rem;
+  }
+}
+
+@media (max-width: 991px) {
+  header h1 {
+    font-size: 32px;
+  }
+
+  header p {
+    visibility: hidden;
+  }
+
+  header .phone {
+    right: 6.5rem;
+    top: 1.25rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .phone {
+    visibility: hidden;
+  }
 }
 
 footer {
@@ -10810,8 +10888,30 @@ footer .helpful-img {
   background-repeat: no-repeat;
 }
 
+@media (max-width: 1500px) {
+  footer h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 1200px) {
+  footer h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  footer h2 {
+    margin-top: 1.5rem;
+  }
+
+  footer .footer-col--last {
+    padding-left: 2.5rem;
+  }
+}
+
 .banner {
-  min-height: 675px;
+  min-height: 500px;
   width: 100%;
   background-size: cover;
   position: relative;
@@ -10843,7 +10943,21 @@ footer .helpful-img {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   left: 9.75%;
-  width: 40%;
+  width: 25%;
+}
+
+.banner.donations-div {
+  background-position: bottom;
+}
+
+@media (max-width: 1500px) {
+  .banner .center-div {
+    width: 80%;
+  }
+
+  .banner .left-div {
+    width: 80%;
+  }
 }
 
 .three-block {
@@ -10872,6 +10986,47 @@ footer .helpful-img {
   background-image: linear-gradient(to right, #1e9cd8, #067ac2);
 }
 
+body a.mailto-link,
+body a:link.mailto-link,
+body a:visited.mailto-link,
+body a:hover.mailto-link {
+  color: #0071bc !important;
+}
+
+@media (max-width: 1500px) {
+  .three-block {
+    padding: 2rem 4rem;
+  }
+
+  .three-block h2 {
+    font-size: 32px;
+  }
+
+  .three-block ul {
+    padding-top: 1rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .three-block {
+    height: auto;
+    padding: 1rem 2rem;
+  }
+}
+
+@media (max-width: 769px) {
+  .three-block {
+    width: auto;
+  }
+}
+
+@media (max-width: 580px) {
+  .three-block {
+    width: 100%;
+    padding: 0 5px;
+  }
+}
+
 .heading-bar {
   text-align: center;
   padding: 1.5rem 0;
@@ -10897,6 +11052,17 @@ footer .helpful-img {
   height: 6rem;
 }
 
+@media (max-width: 768px) {
+  .heading-bar {
+    height: 5rem;
+    padding: 0 2.5rem;
+  }
+
+  .heading-bar h1 {
+    font-size: 36px;
+  }
+}
+
 .main_content {
   padding: 8rem 9.75%;
 }
@@ -10918,6 +11084,26 @@ footer .helpful-img {
 
 .main_content .grey-background {
   background-color: #CDCDCD;
+}
+
+@media (max-width: 580px) {
+  .main_content,
+  .main_content-sub-container,
+  p {
+    width: 100%;
+    padding: 3rem 0;
+  }
+}
+
+button.btn.rounded-button:hover {
+  background-color: white;
+  color: #0071bc;
+}
+
+button.btn.btn-white.rounded-button:hover {
+  border: 2px solid white;
+  background-image: linear-gradient(to right, #1e9cd8, #067ac2);
+  color: white;
 }
 
 .rounded-button {
@@ -10948,8 +11134,21 @@ li.active .sermon-button {
   color: white;
 }
 
-button:focus {
+.nav button:focus {
   color: white;
+}
+
+@media (max-width: 1200px) {
+  .sermon-button {
+    padding: 0.25rem 12rem;
+  }
+}
+
+@media (max-width: 768px) {
+  button.collapsible.px-5 {
+    font-size: 24px;
+    padding: 0;
+  }
 }
 
 .collapsible-container {
@@ -11027,6 +11226,22 @@ button.collapsible {
   font-size: 36px;
 }
 
+@media (max-width: 1550px) {
+  .sub-title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .collapsible:after {
+    margin: 5px 0;
+  }
+
+  .sub-title {
+    display: none;
+  }
+}
+
 #exTab1 .tab-content {
   color: white;
   background-color: #428bca;
@@ -11054,6 +11269,8 @@ li.acitve::after {
 
 .sermon-pastor {
   position: relative;
+  padding: 0 !important;
+  width: 50%;
   font-size: 18px;
   font-weight: 400;
   left: 3.25rem;
@@ -11069,6 +11286,56 @@ li.acitve::after {
   width: 100%;
 }
 
+.error {
+  padding: 5px 9px;
+  border: 1px solid red;
+  color: red;
+  border-radius: 3px;
+  margin: 0 30% 3rem;
+}
+
+.success {
+  padding: 5px 9px;
+  border: 1px solid green;
+  color: green;
+  border-radius: 3px;
+  margin: 0 30% 3rem;
+}
+
+form span {
+  color: red;
+}
+
+.contact-form h2 {
+  padding-top: 8rem;
+}
+
+#respond [class^=col-] {
+  padding: 0 0.25rem 1rem !important;
+}
+
+#respond .input_box {
+  width: 100%;
+}
+
+#respond input {
+  border-radius: 1rem;
+  border: 1px solid #CDCDCD;
+  width: 100%;
+  padding-left: 2rem;
+}
+
+#respond textarea {
+  border-radius: 1rem;
+  border: 1px solid #CDCDCD;
+  width: 100%;
+  padding-left: 2rem;
+}
+
+#respond .btn {
+  margin: 2rem 0 8rem;
+}
+
 .home_interact {
   padding-top: 4rem;
 }
@@ -11079,5 +11346,62 @@ li.acitve::after {
 
 .home_interact i {
   color: #0071bc;
+}
+
+a.statement-faith--link:hover {
+  color: #CDCDCD !important;
+}
+
+.about-page p {
+  padding: 2rem 0;
+}
+
+.about-page .pastor-img {
+  width: 20rem;
+  height: 20rem;
+  background-size: cover;
+  background-position: center;
+  float: left;
+  margin: 2rem 2rem 0 0;
+}
+
+.about-page .about-bold {
+  font-family: "EB Garamond", serif;
+  font-weight: 600;
+}
+
+.donations-page p {
+  padding: 1rem 10rem;
+}
+
+@media (max-width: 1500px) {
+  .donations-page p {
+    padding: 1rem 0;
+  }
+}
+
+.ministries-page p {
+  padding: 1rem 5rem;
+}
+
+.ministries-page .ministries_container_padding {
+  padding: 8rem;
+}
+
+@media (max-width: 1500px) {
+  .ministries-page p {
+    padding: 1rem 0;
+  }
+}
+
+.grey-box {
+  height: 4.5rem;
+  margin-top: 1rem;
+}
+
+.grey-box--text {
+  margin: 0 1rem;
+  border-radius: 4rem;
+  background-color: #CDCDCD;
 }
 

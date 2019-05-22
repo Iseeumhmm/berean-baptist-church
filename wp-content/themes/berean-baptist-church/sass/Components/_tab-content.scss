@@ -3,11 +3,6 @@
     color : white;
     background-color: #428bca;
   }
-  
-  #exTab1 .nav-pills {
-      li {
-      }
-  }
   li.acitve::after {
       content : '';
   }
@@ -29,6 +24,8 @@
     }
     &-pastor {
       position: relative;
+      padding: 0 !important;
+      width: 50%;
       font-size: $font-x-small;
       font-weight: 400;
       left: 3.25rem;
@@ -42,8 +39,6 @@
       width: 100%;
     }
   }
-  
-  
   
   
   

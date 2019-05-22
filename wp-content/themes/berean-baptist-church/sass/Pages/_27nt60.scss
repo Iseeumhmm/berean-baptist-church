@@ -1,0 +1,9 @@
+.grey-box {
+    height: 4.5rem;
+    margin-top: 1rem;
+    &--text {
+        margin: 0 1rem;
+        border-radius: 4rem;
+        background-color: $light-grey;    
+    }
+}

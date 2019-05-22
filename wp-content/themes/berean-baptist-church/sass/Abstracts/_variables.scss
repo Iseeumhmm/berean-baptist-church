@@ -22,4 +22,14 @@ $main-padding-x: 9.75%;
 .secondary-margin { margin: 0 20%; }
 
 $main-padding-y: 8rem;
-.main-padding-y { padding-top: $main-padding-y}
+.main-padding-y { padding-top: $main-padding-y !important; }
+
+@media( max-width: 1325px) {
+    .secondary-margin { margin: 0 5px; }
+}
+
+@media( max-width: 580px) {
+    .secondary-margin {
+        p { padding:  0 5px !important;}
+    }
+}

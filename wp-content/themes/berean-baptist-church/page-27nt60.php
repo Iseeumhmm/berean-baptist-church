@@ -23,6 +23,38 @@ get_header();?>
 			</div>
 			<div class="main_content text-center">
 				<div class="banner banner-img-top" title="Main Banner"></div>
+				<div class="main_content-sub-container">
+					<h2>Start Reading Today</h2>
+					<p class="secondary-margin px-0 pb-5">"For the word of God is quick, and powerful, and sharper than any twoedged sword, piercing even to the dividing asunder of soul and spirit, and of the joints and marrow, and is a discerner of the thoughts and intents of the heart"</p>
+					<p class="px-0">(Hebrews 4:12 - KJV)</p>
+					<div class="container-fluid">
+						<?php
+						$table = get_field( 'start_reading_today' );
+						if ( ! empty ( $table ) ) {
+							foreach ( $table['body'] as $tr ) {
+								echo '<div class="row pb-5">';
+								$i = 0;
+								foreach ( $tr as $td ) {
+									if ( $i == 0 ) {
+										echo '<div class="col-lg-3">';
+										echo '<h2>' . $td['c'] . '</h2>';
+										echo '</div>';
+										$i = 1;
+									} else {
+										echo '<div class="col-lg-3 grey-box color-blue">';
+										echo '<div class="grey-box--text">';
+										echo $td['c'];
+										echo '</div>';
+										echo '</div>';
+									}
+								}
+								echo '</div>';
+							}
+						} ?>
+						</div>
+					</div>
+					<button onclick="" class="btn btn-white rounded-button">DOWNLOAD CHECKLIST</button>
+				</div>
 			</div>
 	
 		</main><!-- #main -->

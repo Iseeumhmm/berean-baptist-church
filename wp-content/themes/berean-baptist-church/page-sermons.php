@@ -24,7 +24,7 @@ get_header();?>
 			<div class="main_content text-center">
 				<div class="banner banner-img-top" title="Main Banner"></div>
 					<div id="exTab1" class="container d-flex justify-content-center">	
-						<ul class="nav nav-pills main-padding-y pb-5">
+						<ul class="nav nav-pills justify-content-center main-padding-y w-100 pb-5">
 							<!-- ***********************  GET SERMONS & CREATE TABS  *********************** -->
 							<?php 
 							$yearly = new WP_Query(array('post_type'=>'Sermons', 'posts_per_page' => -1));
@@ -76,7 +76,7 @@ get_header();?>
 									echo '<span class="sermon-title">';
 									the_title();
 									echo '</span><span class="sermon-date">' . get_the_date() . '</span>';
-									echo '<p class="sermon-pastor p-0">';
+									echo '<p class="sermon-pastor">';
 									the_field('pastors_name');
 									echo '</p>';
 									echo '<hr class="sermon-line"></hr>';

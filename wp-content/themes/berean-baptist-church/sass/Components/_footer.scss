@@ -21,3 +21,22 @@ footer {
         background-repeat: no-repeat;
     }
 }
+
+@media( max-width: 1500px ){
+    footer {
+        h2 { font-size: 32px; }
+    }
+}
+@media( max-width: 1200px ){
+    footer {
+        h2 { font-size: 24px; }
+    }
+}
+@media( max-width: 767px ){
+    footer {
+        h2 { margin-top: 1.5rem; }
+        .footer-col--last {
+            padding-left: 2.5rem;
+        }
+    }
+}

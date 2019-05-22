@@ -12,3 +12,11 @@
         background-color: $light-grey;
     }
 }
+
+
+@media( max-width: 580px ){
+    .main_content, .main_content-sub-container, p {
+        width: 100%;
+        padding: 3rem 0;
+    }
+}
