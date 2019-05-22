@@ -10690,6 +10690,10 @@ a.text-dark:focus {
   padding-top: 8rem !important;
 }
 
+.main-margin-bottom {
+  margin-bottom: 8rem !important;
+}
+
 @media (max-width: 1325px) {
   .secondary-margin {
     margin: 0 5px;

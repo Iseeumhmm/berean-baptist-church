@@ -84,7 +84,7 @@ get_header();?>
 				<h1>Sermons Online</h1>
 			</div>
 			<div class="main_content text-center">
-				<iframe width="100%" height="675" id="gmap_canvas" src="https://maps.google.com/maps?q=932%20Leathorne%20&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+				<iframe class="main-margin-bottom" width="100%" height="675" id="gmap_canvas" src="https://maps.google.com/maps?q=932%20Leathorne%20&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 				<div class="main_content-sub-container grey-background">
 					<h2>Berean Baptist Church</h2>
 					<div class="container-fluid">
