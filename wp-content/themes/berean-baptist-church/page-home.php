@@ -63,7 +63,7 @@ get_header();?>
 					<div class="container-fluid">
 						<div class="row d-flex justify-content-center">
 							<div class="col-md-3 home_interact" title="">
-								<a href="Berean/ministries"><i class="fal fa-3x fa-users"></i></a>
+								<a href="<?php echo get_site_url() ?>/ministries"><i class="fal fa-3x fa-users"></i></a>
 								<p>Church Ministries</p>
 							</div>
 							<div class="col-md-3 home_interact" title="">

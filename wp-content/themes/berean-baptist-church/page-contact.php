@@ -88,18 +88,18 @@ get_header();?>
 				<div class="main_content-sub-container grey-background">
 					<h2>Berean Baptist Church</h2>
 					<div class="container-fluid">
-						<div class="row d-flex justify-content-center">
+						<div class="row d-flex justify-content-center color-blue">
 							<div class="col-md-3 home_interact" title="">
-								<a href="Berean/ministries"><i class="fal fa-3x fa-map-marked-alt"></i></a>
+								<i class="fal fa-3x fa-map-marked-alt"></i>
 								<p>932 Leathorne Street <br>London, ON, N5Z 3M5</p>
 							</div>
 							<div class="col-md-3 home_interact" title="">
-								<a href="Berean/27nt60"><i class="fal fa-3x fa-phone"></i></a>
-								<p>519-685-5414</p>
+								<i class="fal fa-3x fa-phone"></i>
+								<p><a href="tel: 519-685-5414">519-685-5414</a></p>
 							</div>
 							<div class="col-md-3 home_interact" title="">
-								<a href="Berean/sermons"><i class="fal fa-3x fa-envelope"></i></a>
-								<p>pastorbruce@bereanbaptistlondon.org</p>
+								<i class="fal fa-3x fa-envelope"></i>
+								<a href="mailto: pastorbruce@bereanbaptistlondon.org"><p>pastorbruce@ bereanbaptistlondon.org</p></a>
 							</div>
 						</div>
 					</div>

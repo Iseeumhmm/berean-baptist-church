@@ -11345,6 +11345,7 @@ form span {
 }
 
 .home_interact p {
+  white-space: normal;
   padding: 1rem 0 0;
 }
 
