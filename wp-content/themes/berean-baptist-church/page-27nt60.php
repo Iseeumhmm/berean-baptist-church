@@ -21,7 +21,7 @@ get_header();?>
 			<div class="heading-bar heading-bar--about">
 				<h1>The New Testament in 60 Days</h1>
 			</div>
-			<div class="main_content text-center">
+			<div class="main_content text-center banner-27nt60">
 				<div class="banner banner-img-top" title="Main Banner"></div>
 				<div class="main_content-sub-container">
 					<h2>Start Reading Today</h2>
@@ -41,11 +41,13 @@ get_header();?>
 										echo '</div>';
 										$i = 1;
 									} else {
-										echo '<div class="col-lg-3 grey-box color-blue">';
-										echo '<div class="grey-box--text">';
-										echo $td['c'];
-										echo '</div>';
-										echo '</div>';
+										if ( ! empty ( $td['c'] ) ) {
+											echo '<div class="col-lg-3 grey-box color-blue">';
+											echo '<div class="grey-box--text">';
+											echo $td['c'];
+											echo '</div>';
+											echo '</div>';
+										}
 									}
 								}
 								echo '</div>';

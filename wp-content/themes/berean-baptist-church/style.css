@@ -10954,6 +10954,10 @@ footer .helpful-img {
   background-position: bottom;
 }
 
+.banner-27nt60 .banner-img-top {
+  background-position: right;
+}
+
 @media (max-width: 1500px) {
   .banner .center-div {
     width: 80%;
@@ -11149,9 +11153,25 @@ li.active .sermon-button {
 }
 
 @media (max-width: 768px) {
+  .rounded-button {
+    font-size: 18px;
+  }
+
   button.collapsible.px-5 {
     font-size: 24px;
     padding: 0;
+  }
+}
+
+@media (max-width: 580px) {
+  .about-button {
+    margin: 3rem 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .rounded-button {
+    font-size: 16px;
   }
 }
 
@@ -11375,6 +11395,12 @@ a.statement-faith--link:hover {
   font-weight: 600;
 }
 
+@media (max-width: 580px) {
+  .about-page p {
+    padding-bottom: 3rem !important;
+  }
+}
+
 .donations-page p {
   padding: 1rem 10rem;
 }
@@ -11408,5 +11434,11 @@ a.statement-faith--link:hover {
   margin: 0 1rem;
   border-radius: 4rem;
   background-color: #CDCDCD;
+}
+
+@media (max-width: 580px) {
+  .statement p {
+    padding-bottom: 3rem !important;
+  }
 }
 

@@ -16,3 +16,9 @@
     
     
 }
+
+@media( max-width: 580px ){
+    .about-page {
+        p { padding-bottom: 3rem !important; }
+    }
+}

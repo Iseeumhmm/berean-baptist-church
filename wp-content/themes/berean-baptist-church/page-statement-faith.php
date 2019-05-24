@@ -21,7 +21,7 @@ get_header();?>
 			<div class="heading-bar heading-bar--about">
 				<h1>Statement of Faith</h1>
 			</div>
-			<div class="main_content text-center">
+			<div class="main_content text-center statement">
 				<div class="banner banner-img-top" title="Main Banner"></div>
 					<h1 class="main-padding-y">Berean Baptist Church Statement of Faith</h1>
 					<p class="px-0">Adopted January 25, 1997</p>
