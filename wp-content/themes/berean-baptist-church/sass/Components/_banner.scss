@@ -31,7 +31,11 @@
         background-position: right;
     }
 }
-
+.about-page {
+    .banner-img-top {
+        background-position: center;
+    }
+}
 @media( max-width: 1500px ){
     .banner {
         .center-div {
@@ -42,3 +46,12 @@
         }
     } 
 }
+
+@media( max-width: 580px ) {
+    .about-page {
+        .banner-img-bottom {
+            margin-bottom: 3rem;
+        }
+    }
+}
+
