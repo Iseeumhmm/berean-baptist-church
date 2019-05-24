@@ -122,14 +122,6 @@ add_action( 'widgets_init', 'berean_baptist_church_widgets_init' );
 wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css?family=EB+Garamond:400,700|Work+Sans:300,400,700', false ); 
 wp_enqueue_style( 'FontAwesome', get_template_directory_uri() . '/font-awesome/css/all.css', false );
 
-
-wp_register_script( 'jQuery', 'https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', null, null, true );
-wp_enqueue_script('jQuery');
-wp_register_script( 'PopperJs', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', null, null, true );
-wp_enqueue_script('PopperJs');
-wp_register_script( 'Bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', null, null, true );
-wp_enqueue_script('Bootstrap');
-
 function my_theme_scripts_function() {
 	wp_enqueue_script( 'myscript', get_template_directory_uri() . '/js/script.js');
 }
