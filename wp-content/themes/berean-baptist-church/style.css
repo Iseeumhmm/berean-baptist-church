@@ -10958,7 +10958,8 @@ footer .helpful-img {
   background-position: right;
 }
 
-.about-page .banner-img-top {
+.about-page .banner-img-top,
+.about-page .banner-img-bottom {
   background-position: center;
 }
 
@@ -11078,6 +11079,12 @@ body a:hover.mailto-link {
 
   .heading-bar h1 {
     font-size: 36px;
+  }
+}
+
+@media (max-width: 991px) {
+  .heading-bar h1 {
+    font-size: 24px;
   }
 }
 
@@ -11403,6 +11410,10 @@ a.statement-faith--link:hover {
 .about-page .about-bold {
   font-family: "EB Garamond", serif;
   font-weight: 600;
+}
+
+.about-page .main-padding-y {
+  padding-top: 3rem !important;
 }
 
 @media (max-width: 580px) {

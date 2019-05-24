@@ -25,3 +25,8 @@
         padding: 0 2.5rem;
     }
   }
+  @media( max-width: 991px ){
+    .heading-bar {
+        h1 { font-size: $font-small; }
+    }
+}
