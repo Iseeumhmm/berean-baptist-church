@@ -32,24 +32,30 @@ get_header();?>
 						$table = get_field( 'start_reading_today' );
 						if ( ! empty ( $table ) ) {
 							foreach ( $table['body'] as $tr ) {
-								echo '<div class="row pb-5">';
+								echo '<div class="row week">';
 								$i = 0;
+								$a = 0;
 								foreach ( $tr as $td ) {
 									if ( $i == 0 ) {
 										echo '<div class="col-lg-3">';
 										echo '<h2>' . $td['c'] . '</h2>';
 										echo '</div>';
 										$i = 1;
+										$a = 0;
 									} else {
-										if ( ! empty ( $td['c'] ) ) {
+										if ( $a == 0 ) {
 											echo '<div class="col-lg-3 grey-box color-blue">';
-											echo '<div class="grey-box--text">';
+											echo '<a href="' . $td['c'] . '"><div class="grey-box--text">';
+											$a = 1;
+										} else {
 											echo $td['c'];
+											echo '</div></a>';
 											echo '</div>';
-											echo '</div>';
+											$a = 0;
 										}
 									}
 								}
+								echo '<hr>';
 								echo '</div>';
 							}
 						} ?>

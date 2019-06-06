@@ -3,10 +3,12 @@ footer {
     color: white;
     padding: 4rem 0;
     h2 {
+        font-size: $font-medium;
         color: white;
         white-space: nowrap;
     }
     ul {
+        font-size: $font-x-small;
         margin: 0 2.5rem;
         padding: 0;
         list-style-type: none;

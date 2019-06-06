@@ -25,10 +25,8 @@
 //   .active, .collapsible:hover {
 //     background-color: $light-grey;
 //   }
-
   .content {
     margin: 2rem 0;
-    display: none;
     overflow: hidden;
     background-color: white;
     text-align: left;
@@ -45,6 +43,7 @@
     content: '\f067'; /* Unicode character for "plus" sign (+) */
     float: right;
   }
+ 
  
   .collapsible.active:after {
     content: "\f068"; /* Unicode character for "minus" sign (-) */

@@ -33,7 +33,7 @@ get_header();?>
 						<!-- the loop -->
 						<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
 							<div class="col-lg-6 col-xl-5">
-								<img src="<?php the_field( "photo" ); ?>">
+								<!-- <img src="<?php the_field( "photo" ); ?>"> -->
 								<p class="px-0"><?php the_field( "description" ); ?></p>
 							</div>
 						<?php endwhile; ?>

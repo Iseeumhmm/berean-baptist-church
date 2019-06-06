@@ -8,7 +8,24 @@
     }
     
 }
-
+a.statement-faith--link {
+    font-family: 'EB Garamond', serif;
+    font-size: $font-medium;
+    padding: 2rem 0;
+}
 a.statement-faith--link:hover {
     color: $light-grey !important;
+}
+
+@media( max-width: 991px ){
+    a.statement-faith--link {
+        font-size: $font-small;
+        padding: 0;
+    }
+}
+@media( max-width: 441px ){
+    a.statement-faith--link {
+        font-size: $font-x-small;
+        padding: 0;
+    }
 }

@@ -1,4 +1,5 @@
 header {
+    font-size: $font-x-small;
     color: $black;
     nav.navbar {
         display: block;
@@ -24,11 +25,17 @@ header {
         right: 1.5rem;
         top: 1.75rem;
     }
+    .logo {
+        p { padding-bottom: .65rem; }
+    }
 }
 
 @media( max-width: 1750px ){
     header {
-        p { padding-bottom: .9rem; }
+        p { 
+            // padding-bottom: .75rem; 
+            font-size: $font-small;
+        }
     }
 }
 @media( max-width: 1400px ){

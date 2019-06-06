@@ -123,11 +123,14 @@ wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css?family=E
 wp_enqueue_style( 'FontAwesome', get_template_directory_uri() . '/font-awesome/css/all.css', false );
 
 function my_theme_scripts_function() {
-	wp_enqueue_script( 'myscript', get_template_directory_uri() . '/js/script.js');
+	wp_enqueue_script('script', get_template_directory_uri() . '/js/script.js');
+	wp_enqueue_script('my-script', get_template_directory_uri() . '/js/myscript.js', array('jquery'), '' , true );
+
 }
 add_action('wp_enqueue_scripts','my_theme_scripts_function');
   
   
+
 
 function berean_baptist_church_scripts() {
 	wp_enqueue_style( 'berean-baptist-church-style', get_stylesheet_uri() );

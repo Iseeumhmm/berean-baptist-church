@@ -10791,6 +10791,7 @@ li:focus {
 }
 
 header {
+  font-size: 18px;
   color: #1a1a1a;
   margin: 0;
   padding: 0;
@@ -10825,9 +10826,13 @@ header button.navbar-toggler {
   top: 1.75rem;
 }
 
+header .logo p {
+  padding-bottom: 0.65rem;
+}
+
 @media (max-width: 1750px) {
   header p {
-    padding-bottom: 0.9rem;
+    font-size: 24px;
   }
 }
 
@@ -10871,11 +10876,13 @@ footer {
 }
 
 footer h2 {
+  font-size: 36px;
   color: white;
   white-space: nowrap;
 }
 
 footer ul {
+  font-size: 18px;
   margin: 0 2.5rem;
   padding: 0;
   list-style-type: none;
@@ -11108,7 +11115,7 @@ body a:hover.mailto-link {
 }
 
 .main_content .grey-background {
-  background-color: #CDCDCD;
+  background-color: #f9f9f9;
 }
 
 @media (max-width: 580px) {
@@ -11141,7 +11148,7 @@ button.btn.btn-white.rounded-button:hover {
 
 .sermon-button {
   color: #0071bc;
-  background-color: #CDCDCD;
+  background-color: #f9f9f9;
   border: none;
   border-radius: 4rem;
   font-size: 24px;
@@ -11197,7 +11204,7 @@ li.active .sermon-button {
 }
 
 .collapsible {
-  background-color: #CDCDCD;
+  background-color: #f9f9f9;
   color: #0071bc;
   cursor: pointer;
   width: 100%;
@@ -11222,7 +11229,6 @@ button.collapsible-top::after {
 
 .content {
   margin: 2rem 0;
-  display: none;
   overflow: hidden;
   background-color: white;
   text-align: left;
@@ -11323,7 +11329,7 @@ li.acitve::after {
 }
 
 .sermon-line {
-  border-top: 1px solid #CDCDCD;
+  border-top: 1px solid #f9f9f9;
   width: 100%;
 }
 
@@ -11361,14 +11367,14 @@ form span {
 
 #respond input {
   border-radius: 1rem;
-  border: 1px solid #CDCDCD;
+  border: 1px solid #f9f9f9;
   width: 100%;
   padding-left: 2rem;
 }
 
 #respond textarea {
   border-radius: 1rem;
-  border: 1px solid #CDCDCD;
+  border: 1px solid #f9f9f9;
   width: 100%;
   padding-left: 2rem;
 }
@@ -11390,8 +11396,32 @@ form span {
   color: #0071bc;
 }
 
+a.statement-faith--link {
+  font-family: "EB Garamond", serif;
+  font-size: 36px;
+  padding: 2rem 0;
+}
+
 a.statement-faith--link:hover {
-  color: #CDCDCD !important;
+  color: #f9f9f9 !important;
+}
+
+@media (max-width: 991px) {
+  a.statement-faith--link {
+    font-size: 24px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 441px) {
+  a.statement-faith--link {
+    font-size: 18px;
+    padding: 0;
+  }
+}
+
+.about-page h1 {
+  padding-top: 8rem;
 }
 
 .about-page p {
@@ -11448,13 +11478,22 @@ a.statement-faith--link:hover {
 
 .grey-box {
   height: 4.5rem;
-  margin-top: 1rem;
 }
 
 .grey-box--text {
   margin: 0 1rem;
   border-radius: 4rem;
-  background-color: #CDCDCD;
+  background-color: #f9f9f9;
+}
+
+.week hr {
+  border-top: 1px solid #0071bc;
+  width: 95%;
+  margin: 15px auto 25px;
+}
+
+.row.week:last-child hr {
+  display: none;
 }
 
 @media (max-width: 580px) {

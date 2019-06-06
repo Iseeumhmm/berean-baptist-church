@@ -38,7 +38,7 @@
 							<button class="navbar-toggler mr-md-7" data-toggle="collapse" data-target="#navbarMenu">
 								<span class="navbar-toggler-icon"></span>
 							</button>
-							<div class="phone">519 685 5414</div>
+							<div class="phone"><a href="tel: 519 685 5414">519 685 5414</a></div>
 							<div class="collapse navbar-collapse" id="navbarMenu">
 								<div class="navbar-nav ml-auto navbar-mobile-center">
 									<ul class="navbar-nav ml-auto">
