@@ -3,6 +3,7 @@
     width: 100%;
    background-size: cover;
    position: relative;
+   background-position: center center;
    h1, h2, p, button { color: white; }
     button { 
         border: 2px solid white;
@@ -21,19 +22,13 @@
        left: $main-padding-x;
        width: 25%;
    }
-   &.donations-div {
-       background-position: bottom;
-   }
+  
 }
 
-.banner-27nt60 {
-    .banner-img-top {
-        background-position: right;
-    }
-}
+
 .about-page {
     .banner-img-top, .banner-img-bottom {
-        background-position: center;
+        background-position: center center;
     }
 }
 @media( max-width: 1500px ){

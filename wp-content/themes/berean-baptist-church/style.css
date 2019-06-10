@@ -10820,10 +10820,11 @@ header li {
 }
 
 header button.navbar-toggler {
+  height: 2.5rem;
   z-index: 1000;
   position: absolute;
   right: 1.5rem;
-  top: 1.75rem;
+  top: 1.65rem;
 }
 
 header .logo p {
@@ -10839,6 +10840,10 @@ header .logo p {
 @media (max-width: 1400px) {
   header p {
     padding-bottom: 1.2rem;
+  }
+
+  header .londonOntario {
+    color: white;
   }
 }
 
@@ -10858,12 +10863,12 @@ header .logo p {
   }
 
   header .phone {
-    right: 6.5rem;
-    top: 1.25rem;
+    right: 8.5rem;
+    top: 1.15rem;
   }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 572px) {
   .phone {
     visibility: hidden;
   }
@@ -10926,6 +10931,7 @@ footer .helpful-img {
   width: 100%;
   background-size: cover;
   position: relative;
+  background-position: center center;
 }
 
 .banner h1,
@@ -10957,17 +10963,9 @@ footer .helpful-img {
   width: 25%;
 }
 
-.banner.donations-div {
-  background-position: bottom;
-}
-
-.banner-27nt60 .banner-img-top {
-  background-position: right;
-}
-
 .about-page .banner-img-top,
 .about-page .banner-img-bottom {
-  background-position: center;
+  background-position: center center;
 }
 
 @media (max-width: 1500px) {
@@ -11499,6 +11497,12 @@ a.statement-faith--link:hover {
 @media (max-width: 580px) {
   .statement p {
     padding-bottom: 3rem !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  #gmap_canvas {
+    height: 300px;
   }
 }
 

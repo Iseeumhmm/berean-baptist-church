@@ -9,6 +9,8 @@ header {
         position: relative;
         bottom: 4.15rem;
     }
+    .navbar-menu-text {
+    }
     margin: 0;
     padding: 0;
     .phone {
@@ -20,10 +22,11 @@ header {
     }
     li { margin-left: 2rem; }
     button.navbar-toggler {
+        height: 2.5rem;
         z-index: 1000;
         position: absolute;
         right: 1.5rem;
-        top: 1.75rem;
+        top: 1.65rem;
     }
     .logo {
         p { padding-bottom: .65rem; }
@@ -41,6 +44,9 @@ header {
 @media( max-width: 1400px ){
     header {
         p { padding-bottom: 1.2rem; }
+        .londonOntario {
+            color: white;
+        }
     }
 }
 @media( max-width: 1200px ){
@@ -53,11 +59,12 @@ header {
         h1 { font-size: 32px; }
         p {visibility: hidden;}
         .phone {
-            right: 6.5rem;
-            top: 1.25rem;
+            right: 8.5rem;
+            top: 1.15rem;
         }
+        
     }
 }
-@media( max-width: 540px ){
+@media( max-width: 572px ){
     .phone { visibility: hidden; }
 }

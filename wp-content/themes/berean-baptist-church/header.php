@@ -33,10 +33,11 @@
 						<nav class="navbar navbar-expand-lg navbar-light">
 							<div class="logo">
 								<a href="<?php echo get_site_url() ?>/" class="navbar-brand"><h1>Berean Baptist Church</h1></a>
-								<p>London, Ontario</p>
+								<p class="londonOntario">London, Ontario</p>
 							</div>
 							<button class="navbar-toggler mr-md-7" data-toggle="collapse" data-target="#navbarMenu">
-								<span class="navbar-toggler-icon"></span>
+								<!-- <span class="navbar-toggler-icon"></span> -->
+								<span class="navbar-menu-text">Menu</span>
 							</button>
 							<div class="phone"><a href="tel: 519 685 5414">519 685 5414</a></div>
 							<div class="collapse navbar-collapse" id="navbarMenu">
