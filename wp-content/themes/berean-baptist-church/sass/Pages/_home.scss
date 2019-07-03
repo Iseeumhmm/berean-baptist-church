@@ -17,6 +17,8 @@ a.statement-faith--link:hover {
     color: $light-grey !important;
 }
 
+// Media Queries
+
 @media( max-width: 991px ){
     a.statement-faith--link {
         font-size: $font-small;

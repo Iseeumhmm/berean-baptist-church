@@ -23,7 +23,6 @@ get_header();?>
 		background-image: linear-gradient(rgba(0,0,0, .6),rgba(0,0,0, .6)),url('<?php the_field('service_wednesdays_img'); ?>')
 	}
 	</style>
-	<!-- ***********************  GET IMAGES *********************** -->
 	 
 		<!-- ***********************  MAIN AREA *********************** -->
 	<div id="primary" class="content-area">
