@@ -10831,6 +10831,10 @@ header .logo p {
   padding-bottom: 0.65rem;
 }
 
+header .logo-image {
+  max-width: 37.5rem;
+}
+
 @media (max-width: 1750px) {
   header p {
     font-size: 24px;
@@ -10868,9 +10872,29 @@ header .logo p {
   }
 }
 
+@media (max-width: 664px) {
+  header .logo-image {
+    max-width: 25rem;
+  }
+
+  header button.navbar-toggler {
+    top: 0.5rem;
+  }
+
+  header .phone {
+    top: 0;
+  }
+}
+
 @media (max-width: 572px) {
   .phone {
     visibility: hidden;
+  }
+}
+
+@media (max-width: 386px) {
+  header .logo-image {
+    max-width: 20rem;
   }
 }
 
