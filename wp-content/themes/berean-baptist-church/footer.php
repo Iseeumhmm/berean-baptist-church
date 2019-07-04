@@ -31,7 +31,7 @@
 						<li>932 Leathorne Street</li>
 						<li>London, ON, N5Z 3M5</li>
 						<li><a href="tel: 519 685 5414">519 685 5414</a></li>
-						<li><a href="mailto: ">Send us an email</a></li>
+						<li><a href="mailto: pastorbruce@bereanbaptistlondon.org">Send us an email</a></li>
 					</ul> 
                     </div>
                     <div class="col-md-3 col-lg-2 footer-col">

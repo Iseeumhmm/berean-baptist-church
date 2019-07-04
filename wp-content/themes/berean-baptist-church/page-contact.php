@@ -36,7 +36,7 @@
 
     //php mailer variables
 	// $to = get_option('admin_email');
-	$to = "rick@reddingdesigns.com";
+	$to = "pastorbruce@bereanbaptistlondon.org";
 
     $subject = "Message about ".$messageSubject;
     $headers = 'From: '. $email . "\r\n" .
