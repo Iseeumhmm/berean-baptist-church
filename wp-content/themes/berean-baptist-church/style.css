@@ -11499,6 +11499,10 @@ li.acitve::after {
     margin-top: 5px;
   }
 
+  .contact-form {
+    width: 100%;
+  }
+
   .contact-form-quote {
     margin-top: 5px;
   }
