@@ -9,62 +9,6 @@
  * @package Berean_Baptist_Church
  */
 
-    //response generation function
-    $response = "";
-    
-    //function to generate response
-    function my_contact_form_generate_response($type, $message){
-    
-        global $response;
-    
-        if($type == "success") $response = "<div class='success'>{$message}</div>";
-        else $response = "<div class='error'>{$message}</div>";
-    
-    }
-     //response messages
-    $missing_content = "Please supply all information.";
-    $email_invalid   = "Email Address Invalid.";
-    $message_unsent  = "Message was not sent. Try Again.";
-    $message_sent    = "Thanks! Your message has been sent.";
-
-    //user posted variables
-    $name = $_POST['message_name'];
-    $email = $_POST['message_email'];
-    $message = $_POST['message_text'];
-    $messageSubject = $_POST['message_subject'];
-    $submitted = $_POST['submitted'];
-
-    //php mailer variables
-	// $to = get_option('admin_email');
-	$to = "pastorbruce@bereanbaptistlondon.org";
-
-    $subject = "Message about ".$messageSubject;
-    $headers = 'From: '. $email . "\r\n" .
-    'Reply-To: ' . $email . "\r\n";
- 
-    if($submitted == "1"){
-        //validate email
-        if(!filter_var($email, FILTER_VALIDATE_EMAIL))
-        my_contact_form_generate_response("error", $email_invalid);
-        else //email is valid
-        {
-            //validate presence of name and message
-            if(empty($name) || empty($message)){
-                my_contact_form_generate_response("error", $missing_content);
-            }
-            else //ready to go!
-            {
-                $sent = wp_mail($to, $subject, strip_tags($message), $headers);
-                if($sent) {
-                    my_contact_form_generate_response("success", $message_sent); //message sent!
-                }
-                else my_contact_form_generate_response("error", $message_unsent); //message wasn't sent
-            }
-        }
-    // }
-    }
-    else if ($_POST['submitted']) my_contact_form_generate_response("error", $missing_content);
-
 get_header();?>
 
 	<!-- ***********************  GET IMAGES *********************** -->
@@ -114,37 +58,7 @@ get_header();?>
 						<p class="px-0">All fields are required.</p>
                         <div class="message"><?php echo $response; ?></div>
                     </div>
-                    <div id="respond">
-                        <form action="#respond" method="post">
-							<div class="container-fluid">
-								<div class="row d-flex justify-content-center">
-									<div class="col-lg-3">
-										<label class="input_box" for="message_name"><input type="text" name="message_name" placeholder="Name" value="<?php echo esc_attr($_POST['message_name']); ?>"></label>
-									</div>
-									<div class="col-lg-3">
-										<label class="input_box" for="message_email"><input type="text" name="message_email" placeholder="Email" value="<?php echo esc_attr($_POST['message_email']); ?>"></label>
-									</div>
-								</div>
-								<div class="row d-flex justify-content-center">
-									<div class="col-lg-3">
-										<label class="input_box" for="message_phone"><input type="text" name="message_phone" placeholder="Phone" value="<?php echo esc_attr($_POST['message_phone']); ?>"></label>
-									</div>
-									<div class="col-lg-3">
-										<label class="input_box" for="message_subject"><input type="text" name="message_subject" placeholder="Subject" value="<?php echo esc_attr($_POST['message_subject']); ?>"></label>
-									</div>
-								</div>
-								<div class="row d-flex justify-content-center">
-									<div class="col-lg-6">
-										<label class="input_box" for="message_text"><textarea class="message" type="text" name="message_text" placeholder="Message"><?php echo esc_textarea($_POST['message_text']); ?></textarea></label>
-									</div>
-								</div>
-								<input type="hidden" name="submitted" value="1">
-								<button class="btn btn-white rounded-button" value="Send Message" type="submit">SEND MESSAGE</button>
-
-							</div>
-                            
-                        </form>
-                    </div>
+					<?php echo do_shortcode('[contact-form-7 id="165" title="Contact form 1" html_id="contact-form"]'); ?>
 				</section>
 			<!-- ********************************************* CONTACT FORM  *********************************************** -->
 				<div class="container-fluid">

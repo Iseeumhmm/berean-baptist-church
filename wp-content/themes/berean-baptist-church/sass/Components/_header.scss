@@ -59,10 +59,11 @@ header {
             top: 3.8rem;
         }
         .navbar-nav {
+            width: 15rem;
             background: white;
             z-index: 2000;
             text-align: right;
-            padding: 0 15px;
+            padding-right: 2.8rem;
             margin-top: 2rem;
         }
         ul.navbar-nav {

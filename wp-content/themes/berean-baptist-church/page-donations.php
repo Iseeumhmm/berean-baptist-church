@@ -9,7 +9,7 @@
  * @package Berean_Baptist_Church
  */
 get_header();?>
-	<!-- ***********************  GET IMAGES *********************** -->
+	<!-- ***********************  GET THE IMAGES *********************** -->
 	<style>
 		.banner-img-top {
 			background-image: url('<?php the_field('main_banner'); ?>')

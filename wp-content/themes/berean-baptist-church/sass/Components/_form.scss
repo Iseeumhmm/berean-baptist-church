@@ -1,53 +1,158 @@
-.error{
-    padding: 5px 9px;
-    border: 1px solid red;
-    color: red;
-    border-radius: 0px;
-    margin: 0 30% 3rem;
+#contact-form {
+    padding: 2rem;
+    .row {
+        margin-left: -15px !important;
+        margin-right: -15px !important;
+        div[class^="col-"]:first-child {
+            padding-right: 7.5px !important;
+        }
+        div[class^="col-"]:nth-child(2) {
+            padding-left: 7.5px !important;
+        }
+
+    }
+    .row:not(:first-child) {
+        margin-top: 15px;
+    }
+    .button {
+        margin-top: 2rem;
+    }
 }
 
-.success{
-    padding: 5px 9px;
-    border: 1px solid green;
-    color: green;
-    border-radius: 0px;
-    margin: 0 30% 3rem;
-}
-
-form span{
-    color: red;
-}
 .contact-form {
-    h2 {
-        padding-top: 8rem;
+    padding: 8rem 0;
+    .btn {
+        color: $dark-blue;
+        border: 2px solid $dark-blue;
+        border-radius: 4rem;
+        font-size: $font-small;
+        padding: 1rem 4rem;
     }
-}
-#respond {
-    [class^="col-"] {
-        padding: 0 .25rem 1rem !important;
-    }
-    .input_box {
-        width: 100%;
-    }
-    input {
-        height: 4rem;
-        border-style: none;
-        outline: none;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    width: 60rem;
+    p { padding: 0; }
+    &-input {
+        font-size: $font-x-small;
+        color: $grey;
+        border-top-style: none;
         border: 1px solid $light-grey;
+        border-radius: 2rem !important;
         -webkit-appearance: none !important;
-        border-radius: 2rem;
         width: 100%;
+        height: 6rem;
         padding-left: 2rem;
     }
-    textarea { 
-        height: 8rem;
-        border-style: none;
-        outline: none;
+    &-message {
+        font-size: $font-x-small;
+        color: $grey;
+        border-top-style: none;
         border: 1px solid $light-grey;
+        border-radius: 2rem !important;
         -webkit-appearance: none !important;
-        border-radius: 2rem;
-        width: 100%; 
-        padding: .25rem 0 0 2rem;
+        width: 100%;
+        height: 12rem;
+        margin-top: 15px;
+        padding: 1.5rem 0 0 2rem;
     }
-    .btn { margin: 2rem 0 8rem; }
+    
 }
+@media ( max-width: 1200px ) {
+   
+    .contact-form {
+        &-input {
+            border-radius: 0;
+            border-style: solid;
+            height: 4rem;
+        }
+        &-quote {
+            border-radius: 0;
+            border-style: solid;
+            height: 8rem;
+        }
+    }
+    @media ( max-width: 767px ) {
+        #contact-form {
+            .row {
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+                div[class^="col-"]:first-child {
+                    padding-right: 0 !important;
+                }
+                div[class^="col-"]:nth-child(2) {
+                    padding-left: 0 !important;
+                    padding-top: 5px;
+                }
+                div[class^="col-"] {
+                    padding-right: 0 !important;
+                }
+                div[class^="col-"] {
+                    padding-left: 0 !important;
+                }
+            }
+            .row:not(:first-child) {
+                margin-top: 5px;
+            }
+        }
+        .contact-form {
+            &-quote {
+                margin-top: 5px;
+            }
+        }
+    }
+}
+
+// .error{
+//     padding: 5px 9px;
+//     border: 1px solid red;
+//     color: red;
+//     border-radius: 0px;
+//     margin: 0 30% 3rem;
+// }
+
+// .success{
+//     padding: 5px 9px;
+//     border: 1px solid green;
+//     color: green;
+//     border-radius: 0px;
+//     margin: 0 30% 3rem;
+// }
+
+// form span{
+//     color: red;
+// }
+// .contact-form {
+//     h2 {
+//         padding-top: 8rem;
+//     }
+// }
+// #respond {
+//     [class^="col-"] {
+//         padding: 0 .25rem 1rem !important;
+//     }
+//     .input_box {
+//         width: 100%;
+//     }
+//     input {
+//         height: 4rem;
+//         border-style: none;
+//         outline: none;
+//         border: 1px solid $light-grey;
+//         -webkit-appearance: none !important;
+//         border-radius: 2rem;
+//         width: 100%;
+//         padding-left: 2rem;
+//     }
+//     textarea { 
+//         height: 8rem;
+//         border-style: none;
+//         outline: none;
+//         border: 1px solid $light-grey;
+//         -webkit-appearance: none !important;
+//         border-radius: 2rem;
+//         width: 100%; 
+//         padding: .25rem 0 0 2rem;
+//     }
+//     .btn { margin: 2rem 0 8rem; }
+// }
