@@ -35,7 +35,7 @@ get_header();?>
 					<button onclick="location.href = '/Berean';" class="btn rounded-button">LISTEN TO LATEST SERMON</button>
 				</div>
 			</div>
-			<h2 style="padding-top: 6rem;" class="text-center">Searching the Scriptures Daily</h2>
+			<h2 class="text-center searching-scriptures">Searching the Scriptures Daily</h2>
 			<!-- ******************* MAIN CONTENT ******************* -->
 			<div class="main_content">
 				<div class="container-fluid">
