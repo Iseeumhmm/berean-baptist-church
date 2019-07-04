@@ -35,7 +35,9 @@
     $submitted = $_POST['submitted'];
 
     //php mailer variables
-    $to = get_option('admin_email');
+	// $to = get_option('admin_email');
+	$to = "rick@reddingdesigns.com";
+
     $subject = "Message about ".$messageSubject;
     $headers = 'From: '. $email . "\r\n" .
     'Reply-To: ' . $email . "\r\n";

@@ -1,4 +1,7 @@
 .banner {
+    &-home {
+        min-height: 500px;
+    }
     min-height: 500px;
     width: 100%;
    background-size: cover;
@@ -43,6 +46,9 @@
 }
 
 @media( max-width: 580px ) {
+    .banner {
+        min-height: 300px;
+    }
     .about-page {
         .banner-img-bottom {
             margin-bottom: 3rem;

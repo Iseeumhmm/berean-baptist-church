@@ -1,7 +1,7 @@
 .main_content {
     h1 { font-weight: 800; }
     p { padding:  1rem 25% 2rem; }
-    padding: 8rem $main-padding-x;
+    padding: 8rem $main-padding-x ;
     &-sub-container {
         padding: 8rem 0;
         text-align: center;
@@ -17,6 +17,6 @@
 @media( max-width: 580px ){
     .main_content, .main_content-sub-container, p {
         width: 100%;
-        padding: 3rem 0;
+        padding: 0 0 3rem;
     }
 }

@@ -28,7 +28,7 @@ get_header();?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 			<!-- ******************* MAIN BANNER ******************* -->
-			<div class="banner banner-img-top" title="Listen to Latest Sermon">
+			<div class="banner banner-home banner-img-top" title="Listen to Latest Sermon">
 				<div class="center-div text-center">
 					<h1>“Everything by faith  . . .  to please God!"</h1>
 					<p>~ Hebrews 11:6</p>

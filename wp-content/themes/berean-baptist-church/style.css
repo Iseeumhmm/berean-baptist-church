@@ -10981,6 +10981,10 @@ footer .helpful-img {
   background-position: center center;
 }
 
+.banner-home {
+  min-height: 500px;
+}
+
 .banner h1,
 .banner h2,
 .banner p,
@@ -11026,6 +11030,10 @@ footer .helpful-img {
 }
 
 @media (max-width: 580px) {
+  .banner {
+    min-height: 300px;
+  }
+
   .about-page .banner-img-bottom {
     margin-bottom: 3rem;
   }
@@ -11130,6 +11138,7 @@ body a:hover.mailto-link {
   }
 
   .heading-bar h1 {
+    padding-top: 1rem;
     font-size: 36px;
   }
 }
@@ -11168,7 +11177,7 @@ body a:hover.mailto-link {
   .main_content-sub-container,
   p {
     width: 100%;
-    padding: 3rem 0;
+    padding: 0 0 3rem;
   }
 }
 
