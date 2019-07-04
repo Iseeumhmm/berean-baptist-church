@@ -10,8 +10,7 @@ header {
         position: relative;
         bottom: 3.25rem;
     }
-    .navbar-menu-text {
-    }
+   
     margin: 0;
     padding: 0;
     .phone {
@@ -32,6 +31,7 @@ header {
     .logo {
         p { padding-bottom: .65rem; }
         &-image {
+            z-index: 2500;
             max-width: 37.5rem;
         }
     }
@@ -53,13 +53,25 @@ header {
         }
     }
 }
-@media( max-width: 1325px ){
+@media( max-width: 1200px ){
     header {
-        .navbar-collapse.collapse {
-            display: none!important;
+        button.navbar-toggler {
+            top: 3.8rem;
+        }
+        .navbar-nav {
+            background: white;
+            z-index: 2000;
+            text-align: right;
+            padding: 0 15px;
+            margin-top: 2rem;
+        }
+        ul.navbar-nav {
+            position: relative;
+            left: 2rem;
         }
     }
 }
+
 @media( max-width: 991px ){
     header {
         h1 { font-size: 32px; }
@@ -68,7 +80,9 @@ header {
             right: 8.5rem;
             top: 1.15rem;
         }
-        
+        button.navbar-toggler {
+            top: 1.8rem;
+        }
     }
 }
 @media( max-width: 664px ){

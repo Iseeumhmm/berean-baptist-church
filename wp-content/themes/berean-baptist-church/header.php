@@ -30,7 +30,7 @@
 			<div class="container-fluid">
 				<div class="row justify-content-around">
 					<div class="col-md-12 col-lg-11 col-xl-10">
-						<nav class="navbar navbar-expand-lg navbar-light">
+						<nav class="navbar navbar-expand-xl navbar-light">
 							<div class="logo">
 							<a href="<?php echo get_site_url() ?>/"><img class="logo-image" src="<?php echo get_template_directory_uri()?>/images/berean_baptist-logo.png" alt="Logo"></a>
 								<!-- <h1 href="<?php echo get_site_url() ?>/" class="navbar-brand"><h1>Berean Baptist Church</h1></a> -->
