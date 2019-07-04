@@ -3,11 +3,12 @@ header {
     color: $black;
     nav.navbar {
         display: block;
-        margin: 3rem 0 -4rem;
+        margin: 1rem 0 0;
+        height: 8rem;
     }
     #navbarMenu {
         position: relative;
-        bottom: 4.15rem;
+        bottom: 3.25rem;
     }
     .navbar-menu-text {
     }
@@ -18,7 +19,7 @@ header {
         color: $dark-blue;
         position: absolute;
         right: 1.5rem;
-        top: 2rem;
+        top: 0;
     }
     li { margin-left: 2rem; }
     button.navbar-toggler {
@@ -39,22 +40,24 @@ header {
 @media( max-width: 1750px ){
     header {
         p { 
-            // padding-bottom: .75rem; 
             font-size: $font-small;
         }
     }
 }
 @media( max-width: 1400px ){
     header {
+        li { margin-left: .5rem; }
         p { padding-bottom: 1.2rem; }
         .londonOntario {
             color: white;
         }
     }
 }
-@media( max-width: 1200px ){
+@media( max-width: 1325px ){
     header {
-        li { margin-left: .5rem; }
+        .navbar-collapse.collapse {
+            display: none!important;
+        }
     }
 }
 @media( max-width: 991px ){

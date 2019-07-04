@@ -34,7 +34,7 @@
 							<div class="logo">
 							<a href="<?php echo get_site_url() ?>/"><img class="logo-image" src="<?php echo get_template_directory_uri()?>/images/berean_baptist-logo.png" alt="Logo"></a>
 								<!-- <h1 href="<?php echo get_site_url() ?>/" class="navbar-brand"><h1>Berean Baptist Church</h1></a> -->
-								<p class="londonOntario">London, Ontario</p>
+								<!-- <p class="londonOntario">London, Ontario</p> -->
 							</div>
 							<button class="navbar-toggler mr-md-7" data-toggle="collapse" data-target="#navbarMenu">
 								<!-- <span class="navbar-toggler-icon"></span> -->

@@ -18,7 +18,7 @@ License URI:        http://opensource.org/licenses/MIT
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-/* css */
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -10799,12 +10799,13 @@ header {
 
 header nav.navbar {
   display: block;
-  margin: 3rem 0 -4rem;
+  margin: 1rem 0 0;
+  height: 8rem;
 }
 
 header #navbarMenu {
   position: relative;
-  bottom: 4.15rem;
+  bottom: 3.25rem;
 }
 
 header .phone {
@@ -10812,7 +10813,7 @@ header .phone {
   color: #0071bc;
   position: absolute;
   right: 1.5rem;
-  top: 2rem;
+  top: 0;
 }
 
 header li {
@@ -10842,6 +10843,10 @@ header .logo-image {
 }
 
 @media (max-width: 1400px) {
+  header li {
+    margin-left: 0.5rem;
+  }
+
   header p {
     padding-bottom: 1.2rem;
   }
@@ -10851,9 +10856,9 @@ header .logo-image {
   }
 }
 
-@media (max-width: 1200px) {
-  header li {
-    margin-left: 0.5rem;
+@media (max-width: 1325px) {
+  header .navbar-collapse.collapse {
+    display: none !important;
   }
 }
 
