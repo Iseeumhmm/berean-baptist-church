@@ -2,7 +2,7 @@
     padding: 5px 9px;
     border: 1px solid red;
     color: red;
-    border-radius: 3px;
+    border-radius: 0px;
     margin: 0 30% 3rem;
 }
 
@@ -10,7 +10,7 @@
     padding: 5px 9px;
     border: 1px solid green;
     color: green;
-    border-radius: 3px;
+    border-radius: 0px;
     margin: 0 30% 3rem;
 }
 
@@ -30,16 +30,24 @@ form span{
         width: 100%;
     }
     input {
-        border-radius: 1rem;
+        height: 4rem;
+        border-style: none;
+        outline: none;
         border: 1px solid $light-grey;
+        -webkit-appearance: none !important;
+        border-radius: 2rem;
         width: 100%;
         padding-left: 2rem;
     }
     textarea { 
-        border-radius: 1rem;
+        height: 8rem;
+        border-style: none;
+        outline: none;
         border: 1px solid $light-grey;
+        -webkit-appearance: none !important;
+        border-radius: 2rem;
         width: 100%; 
-        padding-left: 2rem;
+        padding: .25rem 0 0 2rem;
     }
     .btn { margin: 2rem 0 8rem; }
 }
