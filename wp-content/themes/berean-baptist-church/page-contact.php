@@ -27,7 +27,7 @@ get_header();?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 			<div class="heading-bar heading-bar--about">
-				<h1>Sermons Online</h1>
+				<h1>Contact Us</h1>
 			</div>
 			<div class="main_content text-center">
 				<iframe class="main-margin-bottom" width="100%" height="675" id="gmap_canvas" src="https://maps.google.com/maps?q=932%20Leathorne%20&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
@@ -58,7 +58,9 @@ get_header();?>
 						<p class="px-0">All fields are required.</p>
                         <div class="message"><?php echo $response; ?></div>
                     </div>
-					<?php echo do_shortcode('[contact-form-7 id="165" title="Contact form 1" html_id="contact-form"]'); ?>
+					<!-- <?php echo do_shortcode('[contact-form-7 id="165" title="Contact form 1" html_id="contact-form"]'); ?> -->
+					<?php echo do_shortcode('[contact-form-7 id="182" title="Contact form 1" html_id="contact-form"]'); ?>
+
 				</section>
 			<!-- ********************************************* CONTACT FORM  *********************************************** -->
 				<div class="container-fluid">

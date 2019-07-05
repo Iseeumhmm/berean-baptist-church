@@ -11437,8 +11437,8 @@ li.acitve::after {
   font-size: 18px;
   color: #808080;
   border-top-style: none;
-  border: 1px solid #f9f9f9;
-  border-radius: 2rem !important;
+  border: 1px solid #dddddd;
+  border-radius: 1rem !important;
   -webkit-appearance: none !important;
   width: 100%;
   height: 6rem;
@@ -11449,8 +11449,8 @@ li.acitve::after {
   font-size: 18px;
   color: #808080;
   border-top-style: none;
-  border: 1px solid #f9f9f9;
-  border-radius: 2rem !important;
+  border: 1px solid #dddddd;
+  border-radius: 1rem !important;
   -webkit-appearance: none !important;
   width: 100%;
   height: 12rem;
@@ -11460,13 +11460,11 @@ li.acitve::after {
 
 @media (max-width: 1200px) {
   .contact-form-input {
-    border-radius: 0;
     border-style: solid;
     height: 4rem;
   }
 
   .contact-form-quote {
-    border-radius: 0;
     border-style: solid;
     height: 8rem;
   }

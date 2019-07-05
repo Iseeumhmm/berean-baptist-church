@@ -37,8 +37,8 @@
                     <div class="col-md-3 col-lg-2 footer-col">
 						<ul>
 							<li><h2>Additional Info</h2></li>
-							<li><a href="">Make a Donation</a></li>
-							<li><a href="">Events</a></li>
+							<li><a href="<?php echo get_site_url() ?>/donations">Make a Donation</a></li>
+							<li><a href="https://calendar.google.com/calendar/embed?src=bereanbaptistlondon@gmail.com&ctz=America/Toronto">Events</a></li>
 							<li><a href="">Sitemap</a></li>
 							<li><a href="">Privacy Policy</a></li>
 						</ul> 

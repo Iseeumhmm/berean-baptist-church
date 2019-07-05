@@ -32,7 +32,7 @@ get_header();?>
 				<div class="center-div text-center">
 					<h1>“Everything by faith  . . .  to please God!"</h1>
 					<p>~ Hebrews 11:6</p>
-					<button onclick="location.href = '/Berean';" class="btn rounded-button">LISTEN TO LATEST SERMON</button>
+					<button onclick="location.href = '<?php echo get_site_url() ?>/sermons';" class="btn rounded-button">LISTEN TO LATEST SERMON</button>
 				</div>
 			</div>
 			<h2 class="text-center searching-scriptures">Searching the Scriptures Daily</h2>
@@ -56,7 +56,7 @@ get_header();?>
 				<div class="main_content-sub-container">
 					<h2>The Nobility of the Bereans</h2>
 					<p>"These (the Bereans) were more noble than those in Thessalonica, in that they received the word with all readiness of mind, and searched the scriptures daily, whether those things were so.<br>(Act 17:11 - KJB)</p>
-					<button onclick="location.href = '/Berean';" class="btn btn-white rounded-button">LEARN MORE ABOUT US</button>
+					<button onclick="location.href = '<?php echo get_site_url() ?>/about';" class="btn btn-white rounded-button">LEARN MORE ABOUT US</button>
 				</div>
 				<div class="main_content-sub-container grey-background">
 					<h2>Interact with Us</h2>
