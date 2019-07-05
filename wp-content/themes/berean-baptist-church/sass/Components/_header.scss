@@ -55,6 +55,9 @@ header {
 }
 @media( max-width: 1200px ){
     header {
+        #navbarMenu {
+            left: 2rem;
+        }
         button.navbar-toggler {
             top: 3.8rem;
         }
@@ -68,7 +71,7 @@ header {
         }
         ul.navbar-nav {
             position: relative;
-            left: 2rem;
+            // left: 2rem;
         }
     }
 }
