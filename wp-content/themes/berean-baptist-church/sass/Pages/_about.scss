@@ -23,6 +23,9 @@
 
 @media( max-width: 580px ){
     .about-page {
+        .pastor-img {
+            margin: .75rem 2rem 0 0;
+        }
         p { padding-bottom: 3rem !important; }
     }
 }

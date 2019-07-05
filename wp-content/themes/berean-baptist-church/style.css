@@ -11600,6 +11600,10 @@ a.statement-faith--link:hover {
 }
 
 @media (max-width: 580px) {
+  .about-page .pastor-img {
+    margin: 0.75rem 2rem 0 0;
+  }
+
   .about-page p {
     padding-bottom: 3rem !important;
   }

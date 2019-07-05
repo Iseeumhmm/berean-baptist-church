@@ -116,6 +116,45 @@ function berean_baptist_church_widgets_init() {
 }
 add_action( 'widgets_init', 'berean_baptist_church_widgets_init' );
 
+//Add Open Graph Meta Info 
+
+function meta_data() {
+	
+	echo '<!--og tags-->';
+	echo '<meta property="og:type" content="business.business">';
+	echo '<meta property="og:title" content="Berean Baptist Church London">';
+	echo '<meta property="og:url" content="https://www.bereanbaptistlondon.org/">';
+	echo '<meta property="og:image" content="http://berean.kingbeardreview.com/wp-content/uploads/2019/05/home-page.jpg">';
+	echo '<meta property="business:contact_data:street_address" content="932 Leathorne Street">';
+	echo '<meta property="business:contact_data:locality" content="London">';
+	echo '<meta property="business:contact_data:region" content="Ontario">';
+	echo '<meta property="business:contact_data:postal_code" content="N5Z 3M5">';
+	echo '<meta property="business:contact_data:country_name" content="Canada">';
+
+	echo '<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">';
+	echo '<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">';
+	echo '<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">';
+	echo '<link rel="manifest" href="favicons/site.webmanifest">';
+	echo '<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#0071bc">';
+	echo '<link rel="shortcut icon" href="favicons/favicon.ico">';
+	echo '<meta name="msapplication-TileColor" content="#0071bc">';
+	echo '<meta name="msapplication-config" content="favicons/browserconfig.xml">';
+	echo '<meta name="theme-color" content="#ffffff">';
+
+	echo '<!-- Global site tag (gtag.js) - Google Analytics -->';
+	echo '<script async src="https://www.googletagmanager.com/gtag/js?id=UA-30398424-23"></script>';
+	echo '<script>';
+	echo 'window.dataLayer = window.dataLayer || [];';
+	echo 'function gtag(){dataLayer.push(arguments);}';
+	echo "gtag('js', new Date());";
+
+	echo "gtag('config', 'UA-30398424-23');";
+	echo '</script>';
+	echo " ";
+}
+add_action( 'wp_head', 'meta_data', 5 );
+
+
 /**
  * Enqueue scripts and styles.
  */
