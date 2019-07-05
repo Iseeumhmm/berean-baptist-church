@@ -47,12 +47,31 @@
 
 @media( max-width: 580px ) {
     .banner {
+        button {
+            margin-top: 1rem;
+        }
         min-height: 300px;
+        .center-div {
+            width: 100%;
+            padding: 0 5px;
+            // &.text-center {
+            //     text-align: left !important;
+            // }
+        }
+        .left-div {
+            h2 { font-size: $font-medium; }
+            left: 0;
+            padding: 0 5px;
+            width: 100%;
+        }
     }
+    
     .about-page {
         .banner-img-bottom {
             margin-bottom: 3rem;
+            
         }
+        
     }
 }
 

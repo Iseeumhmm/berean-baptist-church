@@ -11035,6 +11035,25 @@ footer .helpful-img {
     min-height: 300px;
   }
 
+  .banner button {
+    margin-top: 1rem;
+  }
+
+  .banner .center-div {
+    width: 100%;
+    padding: 0 5px;
+  }
+
+  .banner .left-div {
+    left: 0;
+    padding: 0 5px;
+    width: 100%;
+  }
+
+  .banner .left-div h2 {
+    font-size: 36px;
+  }
+
   .about-page .banner-img-bottom {
     margin-bottom: 3rem;
   }
@@ -11607,6 +11626,12 @@ a.statement-faith--link:hover {
 @media (max-width: 1500px) {
   .ministries-page p {
     padding: 1rem 0;
+  }
+}
+
+@media (max-width: 470px) {
+  .ministries-page .container-fluid {
+    padding: 5px;
   }
 }
 
