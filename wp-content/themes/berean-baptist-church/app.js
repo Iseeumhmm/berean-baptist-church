@@ -17819,8 +17819,8 @@ module.exports = g;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Applications/MAMP/htdocs/Berean/wp-content/themes/berean-baptist-church/js/app.js */"./js/app.js");
-module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/Berean/wp-content/themes/berean-baptist-church/sass/style.scss */"./sass/style.scss");
+__webpack_require__(/*! C:\laragon\www\berean-baptist-church\wp-content\themes\berean-baptist-church\js\app.js */"./js/app.js");
+module.exports = __webpack_require__(/*! C:\laragon\www\berean-baptist-church\wp-content\themes\berean-baptist-church\sass\style.scss */"./sass/style.scss");
 
 
 /***/ })
