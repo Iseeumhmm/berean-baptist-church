@@ -11196,10 +11196,14 @@ body a:hover.mailto-link {
 
 @media (max-width: 580px) {
   .main_content,
-  .main_content-sub-container,
   p {
     width: 100%;
     padding: 0 0 3rem;
+  }
+
+  .main_content-sub-container {
+    width: 100%;
+    padding: 3rem 5px;
   }
 }
 
