@@ -1,9 +1,9 @@
 .three-block {
-    
+
     h2 { color: white; }
     ul { padding-top: 2rem; }
-    li { 
-        list-style: none; 
+    li {
+        list-style: none;
         color: white;
     }
     padding: 4rem 6rem;
@@ -15,7 +15,7 @@
     &--1 {
         background-image: linear-gradient(to right, #1e9cd8, #067ac2);
     }
-  
+
 }
 body a, body a:link, body a:visited, body a:hover {
     &.mailto-link {
@@ -28,7 +28,7 @@ body a, body a:link, body a:visited, body a:hover {
         padding: 2rem 4rem;
         h2 { font-size: 32px }
         ul { padding-top: 1rem; }
-        
+
     }
 }
 @media( max-width: 1200px ){
