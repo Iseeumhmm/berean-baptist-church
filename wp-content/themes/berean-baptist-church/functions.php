@@ -116,10 +116,10 @@ function berean_baptist_church_widgets_init() {
 }
 add_action( 'widgets_init', 'berean_baptist_church_widgets_init' );
 
-//Add Open Graph Meta Info 
+//Add Open Graph Meta Info
 
 function meta_data() {
-	
+
 	echo '<!--og tags-->';
 	echo '<meta property="og:type" content="business.business">';
 	echo '<meta property="og:title" content="Berean Baptist Church London">';
@@ -131,14 +131,14 @@ function meta_data() {
 	echo '<meta property="business:contact_data:postal_code" content="N5Z 3M5">';
 	echo '<meta property="business:contact_data:country_name" content="Canada">';
 
-	echo '<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">';
-	echo '<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">';
-	echo '<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">';
-	echo '<link rel="manifest" href="favicons/site.webmanifest">';
-	echo '<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#0071bc">';
-	echo '<link rel="shortcut icon" href="favicons/favicon.ico">';
+	// echo '<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">';
+	// echo '<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">';
+	// echo '<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">';
+	// echo '<link rel="manifest" href="favicons/site.webmanifest">';
+	// echo '<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#0071bc">';
+	// echo '<link rel="shortcut icon" href="favicons/favicon.ico">';
 	echo '<meta name="msapplication-TileColor" content="#0071bc">';
-	echo '<meta name="msapplication-config" content="favicons/browserconfig.xml">';
+	// echo '<meta name="msapplication-config" content="favicons/browserconfig.xml">';
 	echo '<meta name="theme-color" content="#ffffff">';
 
 	echo '<!-- Global site tag (gtag.js) - Google Analytics -->';
@@ -158,7 +158,7 @@ add_action( 'wp_head', 'meta_data', 5 );
 /**
  * Enqueue scripts and styles.
  */
-wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css?family=EB+Garamond:400,700|Work+Sans:300,400,700', false ); 
+wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css?family=EB+Garamond:400,700|Work+Sans:300,400,700', false );
 wp_enqueue_style( 'FontAwesome', get_template_directory_uri() . '/font-awesome/css/all.css', false );
 
 function my_theme_scripts_function() {
@@ -167,8 +167,8 @@ function my_theme_scripts_function() {
 
 }
 add_action('wp_enqueue_scripts','my_theme_scripts_function');
-  
-  
+
+
 
 
 function berean_baptist_church_scripts() {
@@ -188,7 +188,7 @@ add_action( 'wp_enqueue_scripts', 'berean_baptist_church_scripts' );
  * Custom Footer ACF
  */
 if( function_exists('acf_add_options_page') ) {
-	
+
 	acf_add_options_page(array(
 		'page_title' 	=> 'Footer',
 		'menu_title'	=> 'Footer Customization',
@@ -214,11 +214,11 @@ function missionary_init() {
         'view_item' => 'View Missionary',
         'search_items' => 'Search Missionaries',
         'not_found' =>  'No Missionary Found',
-        'not_found_in_trash' => 'No Missionary found in Trash', 
+        'not_found_in_trash' => 'No Missionary found in Trash',
         'parent_item_colon' => '',
         'menu_name' => 'Missionaries',
     );
-    
+
     // register post type
     $args = array(
         'labels' => $labels,
@@ -236,7 +236,7 @@ function missionary_init() {
         )
     );
     register_post_type( 'missionaries', $args );
-    
+
 }
 add_action( 'init', 'missionary_init' );
 
@@ -255,11 +255,11 @@ function scriptures_init() {
         'view_item' => 'View Scriptures',
         'search_items' => 'Search Scriptures',
         'not_found' =>  'No Scriptures Found',
-        'not_found_in_trash' => 'No Scriptures found in Trash', 
+        'not_found_in_trash' => 'No Scriptures found in Trash',
         'parent_item_colon' => '',
         'menu_name' => 'Scriptures',
     );
-    
+
     // register post type
     $args = array(
         'labels' => $labels,
@@ -295,11 +295,11 @@ function sermons_init() {
         'view_item' => 'View Sermons',
         'search_items' => 'Search Sermons',
         'not_found' =>  'No Sermons Found',
-        'not_found_in_trash' => 'No Sermons found in Trash', 
+        'not_found_in_trash' => 'No Sermons found in Trash',
         'parent_item_colon' => '',
         'menu_name' => 'Sermons',
     );
-    
+
     // register post type
     $args = array(
         'labels' => $labels,
@@ -317,10 +317,10 @@ function sermons_init() {
 		)
 	);
 	register_post_type( 'Sermons', $args );
-	
+
 	 // register taxonomy
 	 register_taxonomy('sermons_by_year', 'Sermons', array('hierarchical' => true, 'label' => 'Sermons', 'query_var' => true, 'rewrite' => array( 'slug' => 'sermons-by-year' )));
-	
+
 }
 add_action( 'init', 'sermons_init' );
 /**
@@ -349,4 +349,3 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-

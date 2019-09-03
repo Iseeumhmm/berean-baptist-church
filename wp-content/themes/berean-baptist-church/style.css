@@ -11125,7 +11125,6 @@ body a:hover.mailto-link {
 @media (max-width: 580px) {
   .three-block {
     width: 100%;
-    padding: 0 5px;
   }
 }
 
@@ -11197,10 +11196,14 @@ body a:hover.mailto-link {
 
 @media (max-width: 580px) {
   .main_content,
-  .main_content-sub-container,
   p {
     width: 100%;
     padding: 0 0 3rem;
+  }
+
+  .main_content-sub-container {
+    width: 100%;
+    padding: 3rem 5px;
   }
 }
 
@@ -11565,7 +11568,7 @@ a.statement-faith--link:hover {
 
 @media (max-width: 580px) {
   .searching-scriptures {
-    padding-top: 3rem;
+    padding: 3rem 5px;
   }
 }
 
