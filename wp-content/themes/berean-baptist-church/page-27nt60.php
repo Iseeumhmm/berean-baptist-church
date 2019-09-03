@@ -61,7 +61,7 @@ get_header();?>
 						} ?>
 						</div>
 					</div>
-					<button onclick="" class="btn btn-white rounded-button">DOWNLOAD CHECKLIST</button>
+					<!-- <button onclick="" class="btn btn-white rounded-button">DOWNLOAD CHECKLIST</button> -->
 				</div>
 			</div>
 	
