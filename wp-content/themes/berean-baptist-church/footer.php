@@ -46,7 +46,7 @@
                     <div class="col-md-3 col-lg-2 footer-col footer-col--last">
                         <div>
 							<h2>Helpful Links</h2>
-							<a href="">
+							<a href="https://icr.org/" target="_blank">
 								<div class="helpful-img"></div>
 							</a>
                         </div>      

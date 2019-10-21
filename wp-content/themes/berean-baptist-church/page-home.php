@@ -40,8 +40,8 @@ get_header();?>
 			<div class="main_content">
 				<div class="container-fluid">
 					<div class="row d-flex justify-content-center">
-						<div class="col-sm-12 col-md-8 col-lg-auto three-block three-block--1" title="Service Times">
-							<h2>Berean Baptist <br> Service Times</h2>
+						<div class="col-sm-12 col-md-8 col-lg-auto three-block three-block--1 d-flex" title="Service Times">
+							<h2 class="my-auto">Berean Baptist <br> Service Times</h2>
 						</div>
 						<div class="col-sm-12 col-md-8 col-lg-auto three-block three-block--2" title="Sundays">
 						<h2>Sundays</h2>
@@ -62,23 +62,34 @@ get_header();?>
 					<h2>Interact with Us</h2>
 					<div class="container-fluid">
 						<div class="row d-flex justify-content-center">
-							<div class="col-md-3 home_interact" title="">
+							<div class="col-md-4 home_interact" title="">
 								<a href="<?php echo get_site_url() ?>/ministries"><i class="fal fa-3x fa-users"></i></a>
 								<p>Church Ministries</p>
 							</div>
-							<div class="col-md-3 home_interact" title="">
+							<div class="col-md-4 home_interact" title="">
 								<a href="Berean/27nt60"><i class="fal fa-3x fa-bible"></i></a>
 								<p>NT in 60 Days</p>
 							</div>
-							<div class="col-md-3 home_interact" title="">
+							<div class="col-md-4 home_interact" title="">
 								<a href="Berean/sermons"><i class="fal fa-3x fa-calendar-alt"></i></a>
 								<p>Upcoming Events</p>
 							</div>
+<!--
+                            <div class="col-md-4 home_interact" title="">
+								<a href="Berean/sermons"><i class="fal fa-3x fa-map"></i></a>
+								<p>Bulletins</p>
+							</div>
+                            <div class="col-md-4 home_interact" title="">
+								<a href="Berean/sermons"><i class="fal fa-3x fa-microphone"></i></a>
+								<p>R.W. Redding Sermons</p>
+							</div>
+                            <div class="col-md-4 home_interact" title="">
+								<a href="Berean/statement-faith"><i class="fal fa-3x fa-praying-hands"></i></a>
+								<p>Statement of Faith</p>
+							</div>
+-->
 						</div>
 					</div>
-				</div>
-				<div class="heading-bar d-flex justify-content-center align-items-center">
-					<a href="Berean/statement-faith" class="statement-faith--link">Click Here to read our Statement of Faith</a>
 				</div>
 			</div>
 			<div class="banner banner-img-bottom" title="Missionaries">

@@ -23,7 +23,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>
+<body <?php body_class(); ?> >
     <div id="page" class="site">
         <header id="masthead" class="site-header">
 			<div class="container-fluid">
